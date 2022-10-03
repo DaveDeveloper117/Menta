@@ -3,6 +3,7 @@
     <string name="iniciar_sesion_aqui"><u>Regístrate aquí</u></string>
     <string name="inicie_sesi_n_aqu"><u>Inicie sesión aquí</u></string>
     <string name="la_contrase_a_debe_incluir_al_menos_8_caracteres_y_1_n_mero"><i>La contraseña debe incluir al menos 8 caracteres y 1 número</i></string>
+    <string name="fab_content_desc">fabDesc</string>
 
     <style name="TextAppearance.MdcTypographyStyles.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
         <item name="fontFamily">@font/overpass</item>
