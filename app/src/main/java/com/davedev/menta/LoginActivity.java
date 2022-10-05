@@ -81,7 +81,8 @@ public class LoginActivity extends AppCompatActivity {
         appleFab.setAnimation(rightMove);
         newAccTextView.setAnimation(upMove);
         registerTextView.setAnimation(upMove);
-
+        leftDivider.setAnimation(leftMove);
+        rightDivider.setAnimation(rightMove);
 
 
         forgotPassTextView.setOnClickListener(new View.OnClickListener() {
