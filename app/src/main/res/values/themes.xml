@@ -2,24 +2,36 @@
     <!-- Base application theme. -->
     <style name="Theme.Menta" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/ebony</item>
-        <item name="colorPrimaryVariant">@color/rifle_green</item>
+        <item name="colorPrimary">@color/antique_brass</item>
+        <item name="colorPrimaryVariant">@color/liver_chestnut</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/apricot</item>
-        <item name="colorSecondaryVariant">@color/liver_chestnut</item>
+        <item name="colorSecondary">@color/artichoke</item>
+        <item name="colorSecondaryVariant">@color/rifle_green</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-        <item name="android:textColorHint">@color/rifle_green</item>
-        <item name="android:textColor">@color/rifle_green</item>
-        <item name="android:textColorPrimaryDisableOnly">@color/rifle_green</item>
+        <item name="android:textColorHint">@color/liver_chestnut</item>
+        <item name="android:textColor">@color/liver_chestnut</item>
+        <item name="android:textColorPrimaryDisableOnly">@color/liver_chestnut</item>
+        <item name="floatingActionButtonStyle">@style/Widget.App.FloatingActionButton</item>
     </style>
+
+    <style name="Widget.App.FloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.FloatingActionButton</item>
+    </style>
+
+    <style name="ThemeOverlay.App.FloatingActionButton" parent="">
+        <item name="colorSecondary">@color/apricot</item>
+        <item name="colorOnSecondary">@color/liver_chestnut</item>
+        <item name="colorOnSurface">@color/liver_chestnut</item>
+    </style>
+
     <style name="SplashScreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
-        <item name="android:textColorSecondary">@color/rifle_green</item>
+        <item name="android:textColorSecondary">@color/liver_chestnut</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
         <item name="android:windowFullscreen">true</item>

@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:animateLayoutChanges="true"
     tools:context=".LoginActivity">
-
 
     <ImageView
         android:id="@+id/bgLeftImageView"
@@ -27,7 +26,7 @@
         android:cropToPadding="true"
         android:rotation="180"
         android:rotationY="180"
-        android:scaleType="centerCrop"
+        android:scaleType="fitEnd"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/plant_top_right" />
@@ -37,7 +36,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="150dp"
         android:adjustViewBounds="true"
         android:cropToPadding="true"
@@ -72,7 +71,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
         android:hint="Correo electronico"
         app:boxCornerRadiusBottomEnd="16dp"
@@ -132,7 +131,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@style/TextAppearance.MdcTypographyStyles.Body2"
-        android:text="¿Olvidaste tu contraseña?"
+        android:text="@string/olvidaste_tu_contrase_a"
         app:layout_constraintBottom_toBottomOf="@+id/radioRememberButton"
         app:layout_constraintEnd_toEndOf="@+id/passwordTextField"
         app:layout_constraintTop_toTopOf="@+id/radioRememberButton" />
@@ -158,52 +157,92 @@
         android:text="¿Aún no tienes una cuenta?, "
         app:layout_constraintEnd_toEndOf="@+id/loginButton"
         app:layout_constraintStart_toStartOf="@+id/loginButton"
+        app:layout_constraintTop_toBottomOf="@+id/googleFab" />
+
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/rightMaterialDivider2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/suppTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/suppTextView"
+        app:layout_constraintTop_toTopOf="@+id/suppTextView" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/leftMaterialDivider"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/suppTextView"
+        app:layout_constraintEnd_toStartOf="@+id/suppTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/suppTextView" />
+
+    <TextView
+        android:id="@+id/suppTextView"
+        style="@style/TextAppearance.MdcTypographyStyles.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="O inicie sesión con"
+        app:layout_constraintEnd_toEndOf="@+id/loginButton"
+        app:layout_constraintStart_toStartOf="@+id/loginButton"
         app:layout_constraintTop_toBottomOf="@+id/loginButton" />
 
     <TextView
         android:id="@+id/registerTextView"
+        style="@style/TextAppearance.MdcTypographyStyles.Body1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        style="@style/TextAppearance.MdcTypographyStyles.Body1"
         android:text="@string/iniciar_sesion_aqui"
         app:layout_constraintEnd_toEndOf="@+id/newAccTextView"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="@+id/newAccTextView"
         app:layout_constraintTop_toBottomOf="@+id/newAccTextView" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/googleFab"
+        style="@style/Widget.App.FloatingActionButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:contentDescription="@string/fab_content_desc"
-        app:layout_constraintEnd_toEndOf="@+id/registerTextView"
-        app:layout_constraintStart_toStartOf="@+id/registerTextView"
-        app:layout_constraintTop_toBottomOf="@+id/registerTextView"
+        app:layout_constraintEnd_toEndOf="@+id/suppTextView"
+        app:layout_constraintStart_toStartOf="@+id/suppTextView"
+        app:layout_constraintTop_toBottomOf="@+id/suppTextView"
         app:srcCompat="@drawable/ic_google" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/facebookFab"
+        style="@style/Widget.App.FloatingActionButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:contentDescription="@string/fab_content_desc"
+        app:layout_constraintBottom_toBottomOf="@+id/googleFab"
         app:layout_constraintEnd_toStartOf="@+id/googleFab"
         app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerTextView"
+        app:layout_constraintTop_toTopOf="@+id/googleFab"
         app:srcCompat="@drawable/ic_facebook" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/appleFab"
+        style="@style/Widget.App.FloatingActionButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:contentDescription="@string/fab_content_desc"
+        app:layout_constraintBottom_toBottomOf="@+id/googleFab"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toEndOf="@+id/googleFab"
-        app:layout_constraintTop_toBottomOf="@+id/registerTextView"
+        app:layout_constraintTop_toTopOf="@+id/googleFab"
         app:srcCompat="@drawable/ic_apple" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,7 +15,17 @@
         <item name="android:textColorHint">@color/artichoke</item>
         <item name="android:textColor">@color/artichoke</item>
         <item name="android:textColorPrimaryDisableOnly">@color/artichoke</item>
+        <item name="floatingActionButtonStyle">@style/Widget.App.FloatingActionButton</item>
+    </style>
 
+    <style name="Widget.App.FloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.FloatingActionButton</item>
+    </style>
+
+    <style name="ThemeOverlay.App.FloatingActionButton" parent="">
+        <item name="colorSecondary">@color/artichoke</item>
+        <item name="colorOnSecondary">@color/rifle_green</item>
+        <item name="colorOnSurface">@color/rifle_green</item>
     </style>
     <style name="SplashScreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Status bar color. -->
