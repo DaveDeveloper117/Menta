@@ -16,7 +16,8 @@
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/plant_bottom_left" />
+        app:srcCompat="@drawable/plant_bottom_left"
+        android:contentDescription="@string/backgroundImage1" />
 
     <ImageView
         android:id="@+id/bgRightImageView"
@@ -29,7 +30,8 @@
         android:scaleType="fitEnd"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/plant_top_right" />
+        app:srcCompat="@drawable/plant_top_right"
+        android:contentDescription="@string/backgroundImage2" />
 
     <ImageView
         android:id="@+id/logoImageView"
@@ -43,7 +45,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_potted_plant_24" />
+        app:srcCompat="@drawable/ic_potted_plant_24"
+        android:contentDescription="@string/logoImage" />
 
     <TextView
         android:id="@+id/descTextView"
@@ -53,7 +56,8 @@
         android:text="Bienvenido a Menta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logoImageView" />
+        app:layout_constraintTop_toBottomOf="@+id/logoImageView"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/titleTextView"
@@ -63,7 +67,8 @@
         android:text="Inicie sesión para continuar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/descTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/descTextView"
+        tools:ignore="HardcodedText" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/userTextField"
@@ -81,7 +86,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleTextView"
-        app:startIconDrawable="@drawable/ic_round_person_outline_24">
+        app:startIconDrawable="@drawable/ic_round_person_outline_24"
+        tools:ignore="HardcodedText">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -107,7 +113,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/userTextField"
         app:passwordToggleEnabled="true"
-        app:startIconDrawable="@drawable/ic_outline_lock_24">
+        app:startIconDrawable="@drawable/ic_outline_lock_24"
+        tools:ignore="HardcodedText">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -124,7 +131,8 @@
         android:layout_marginTop="8dp"
         android:text="Mantener sesión"
         app:layout_constraintStart_toStartOf="@+id/passwordTextField"
-        app:layout_constraintTop_toBottomOf="@+id/passwordTextField" />
+        app:layout_constraintTop_toBottomOf="@+id/passwordTextField"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/forgotPassTextView"
@@ -146,7 +154,8 @@
         app:cornerRadius="16dp"
         app:layout_constraintEnd_toEndOf="@+id/passwordTextField"
         app:layout_constraintStart_toStartOf="@+id/passwordTextField"
-        app:layout_constraintTop_toBottomOf="@+id/radioRememberButton" />
+        app:layout_constraintTop_toBottomOf="@+id/radioRememberButton"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/newAccTextView"
@@ -157,7 +166,8 @@
         android:text="¿Aún no tienes una cuenta?, "
         app:layout_constraintEnd_toEndOf="@+id/loginButton"
         app:layout_constraintStart_toStartOf="@+id/loginButton"
-        app:layout_constraintTop_toBottomOf="@+id/googleFab" />
+        app:layout_constraintTop_toBottomOf="@+id/googleFab"
+        tools:ignore="HardcodedText" />
 
 
     <com.google.android.material.divider.MaterialDivider
@@ -191,7 +201,8 @@
         android:text="O inicie sesión con"
         app:layout_constraintEnd_toEndOf="@+id/loginButton"
         app:layout_constraintStart_toStartOf="@+id/loginButton"
-        app:layout_constraintTop_toBottomOf="@+id/loginButton" />
+        app:layout_constraintTop_toBottomOf="@+id/loginButton"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/registerTextView"

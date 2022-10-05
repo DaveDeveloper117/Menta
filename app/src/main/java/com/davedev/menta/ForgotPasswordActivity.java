@@ -15,19 +15,17 @@ import android.widget.TextView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.textfield.TextInputLayout;
 
-public class FogotPasswordActivity extends AppCompatActivity {
+public class ForgotPasswordActivity extends AppCompatActivity {
     TextView descTextView,  titleTextView, suppTextView, newAccTextView,registerTextView, forgotPassTextView;
     ImageView logoImageView, bgRightImageView, bgLeftImageView;
-    TextInputLayout userTextField, passwordTextField, emailTextField, repeatPasswordTextField;
-    RadioButton radioRememberButton;
+    TextInputLayout userTextField;
     Button loginButton;
-    FloatingActionButton facebookFab, googleFab, appleFab;
     Animation downMove, upMove, leftMove, rightMove, fadeIn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fogot_password);
+        setContentView(R.layout.activity_forgot_password);
         //TextView
         descTextView = findViewById(R.id.descTextView);
         titleTextView = findViewById(R.id.titleTextView);
@@ -42,11 +40,11 @@ public class FogotPasswordActivity extends AppCompatActivity {
         //Button
         loginButton = findViewById(R.id.loginButton);
         //Animations
-        downMove = AnimationUtils.loadAnimation(FogotPasswordActivity.this, R.anim.down_move);
-        upMove = AnimationUtils.loadAnimation(FogotPasswordActivity.this, R.anim.up_move);
-        leftMove = AnimationUtils.loadAnimation(FogotPasswordActivity.this, R.anim.left_move);
-        rightMove = AnimationUtils.loadAnimation(FogotPasswordActivity.this, R.anim.right_move);
-        fadeIn = AnimationUtils.loadAnimation(FogotPasswordActivity.this, R.anim.fade_in);
+        downMove = AnimationUtils.loadAnimation(ForgotPasswordActivity.this, R.anim.down_move);
+        upMove = AnimationUtils.loadAnimation(ForgotPasswordActivity.this, R.anim.up_move);
+        leftMove = AnimationUtils.loadAnimation(ForgotPasswordActivity.this, R.anim.left_move);
+        rightMove = AnimationUtils.loadAnimation(ForgotPasswordActivity.this, R.anim.right_move);
+        fadeIn = AnimationUtils.loadAnimation(ForgotPasswordActivity.this, R.anim.fade_in);
         //Set Animations
         bgLeftImageView.setAnimation(fadeIn);
         bgRightImageView.setAnimation(fadeIn);
@@ -61,7 +59,7 @@ public class FogotPasswordActivity extends AppCompatActivity {
         registerTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(FogotPasswordActivity.this, LoginActivity.class);
+                Intent intent = new Intent(ForgotPasswordActivity.this, LoginActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -69,7 +67,7 @@ public class FogotPasswordActivity extends AppCompatActivity {
     }
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(FogotPasswordActivity.this, LoginActivity.class);
+        Intent intent = new Intent(ForgotPasswordActivity.this, LoginActivity.class);
         startActivity(intent);
         finish();
     }

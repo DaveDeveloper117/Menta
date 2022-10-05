@@ -5,6 +5,9 @@
     <string name="la_contrase_a_debe_incluir_al_menos_8_caracteres_y_1_n_mero"><i>La contraseña debe incluir al menos 8 caracteres y 1 número</i></string>
     <string name="fab_content_desc">fabDesc</string>
     <string name="olvidaste_tu_contrase_a"><u>¿Olvidaste tu contraseña?</u></string>
+    <string name="logoImage">logoImage</string>
+    <string name="backgroundImage1">bgImage1</string>
+    <string name="backgroundImage2">bgImage2</string>
 
     <style name="TextAppearance.MdcTypographyStyles.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
         <item name="fontFamily">@font/overpass</item>
