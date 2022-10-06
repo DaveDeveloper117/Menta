@@ -104,7 +104,7 @@ public class SignUpActivity extends AppCompatActivity {
 
         if (email.isEmpty() || !Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             //userTextInputEditText.setError("Ingresa un correo válido");
-            emailTextField.setError("Ingresa un correo");
+            emailTextField.setError("Ingresa un correo válido");
 
         } else {
             emailTextField.setError(null);
