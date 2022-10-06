@@ -19,7 +19,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bg_login" />
+        app:srcCompat="@drawable/bg_login"
+        android:contentDescription="@string/backgroundImage1" />
 
     <ImageView
         android:id="@+id/bgLeftImageView"
@@ -106,6 +107,7 @@
         tools:ignore="HardcodedText">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userTextInputEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress" />
@@ -135,6 +137,7 @@
         tools:ignore="HardcodedText">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordTextInputEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword" />

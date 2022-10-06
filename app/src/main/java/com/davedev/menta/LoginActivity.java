@@ -14,12 +14,14 @@ import android.widget.TextView;
 
 import com.google.android.material.divider.MaterialDivider;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
 public class LoginActivity extends AppCompatActivity {
     TextView descTextView,  titleTextView, suppTextView, newAccTextView,registerTextView, forgotPassTextView;
     ImageView logoImageView, bgRightImageView, bgLeftImageView;
     TextInputLayout userTextField, passwordTextField;
+    TextInputEditText userTextInputEditText, passwordTextInputEditText;
     RadioButton radioRememberButton;
     Button loginButton;
     FloatingActionButton facebookFab, googleFab, appleFab;
@@ -44,6 +46,9 @@ public class LoginActivity extends AppCompatActivity {
         //TextInput
         userTextField = findViewById(R.id.userTextField);
         passwordTextField = findViewById(R.id.passwordTextField);
+        //EditText
+        userTextInputEditText = findViewById(R.id.userTextInputEditText);
+        passwordTextInputEditText = findViewById(R.id.passwordTextInputEditText);
         //RadioButton
         radioRememberButton = findViewById(R.id.radioRememberButton);
         //Button
