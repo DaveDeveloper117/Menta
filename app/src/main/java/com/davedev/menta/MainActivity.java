@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
         fadeOut = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fade_out);
 
         //Set Animations
-        logoImageView.setAnimation(fadeIn);
         bgImageView.setAnimation(fadeOut);
+        logoImageView.setAnimation(fadeIn);
         titleTextView.setAnimation(fadeIn);
 
         new Handler().postDelayed(new Runnable() {
@@ -40,6 +40,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        }, 1000);
+        }, 1500);
     }
 }
