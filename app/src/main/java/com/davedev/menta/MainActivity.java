@@ -21,15 +21,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //Logo Image
         logoImageView = findViewById(R.id.logoImageView);
-        bgImageView = findViewById(R.id.bgImageView);
+        //bgImageView = findViewById(R.id.bgImageView);
         //Text Logo
         titleTextView = findViewById(R.id.titleTextView);
         //Animation
         fadeIn = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fade_in);
-        fadeOut = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fade_out);
+        //fadeOut = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fade_out);
 
         //Set Animations
-        bgImageView.setAnimation(fadeOut);
+        //bgImageView.setAnimation(fadeOut);
         logoImageView.setAnimation(fadeIn);
         titleTextView.setAnimation(fadeIn);
 

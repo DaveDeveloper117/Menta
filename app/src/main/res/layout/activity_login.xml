@@ -8,6 +8,20 @@
     tools:context=".LoginActivity">
 
     <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:alpha="0.3"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg_login" />
+
+    <ImageView
         android:id="@+id/bgLeftImageView"
         android:layout_width="300dp"
         android:layout_height="300dp"
@@ -78,7 +92,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
-        android:hint="Correo electronico"
+        android:hint="Correo electrónico"
         app:boxCornerRadiusBottomEnd="16dp"
         app:boxCornerRadiusBottomStart="16dp"
         app:boxCornerRadiusTopEnd="16dp"
@@ -87,6 +101,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleTextView"
         app:startIconDrawable="@drawable/ic_outline_email_24"
+        app:boxStrokeWidth="2dp"
+        app:boxStrokeWidthFocused="3dp"
         tools:ignore="HardcodedText">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -114,6 +130,8 @@
         app:layout_constraintTop_toBottomOf="@+id/userTextField"
         app:passwordToggleEnabled="true"
         app:startIconDrawable="@drawable/ic_outline_lock_24"
+        app:boxStrokeWidth="2dp"
+        app:boxStrokeWidthFocused="3dp"
         tools:ignore="HardcodedText">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -129,7 +147,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:visibility="invisible"
         android:text="Mantener sesión"
         app:layout_constraintStart_toStartOf="@+id/passwordTextField"
         app:layout_constraintTop_toBottomOf="@+id/passwordTextField"
@@ -180,7 +197,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/suppTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/suppTextView"
-        app:layout_constraintTop_toTopOf="@+id/suppTextView" />
+        app:layout_constraintTop_toTopOf="@+id/suppTextView"
+        app:dividerThickness="2dp"/>
 
     <com.google.android.material.divider.MaterialDivider
         android:id="@+id/leftMaterialDivider"
@@ -191,7 +209,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/suppTextView"
         app:layout_constraintEnd_toStartOf="@+id/suppTextView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/suppTextView" />
+        app:layout_constraintTop_toTopOf="@+id/suppTextView"
+        app:dividerThickness="2dp"/>
 
     <TextView
         android:id="@+id/suppTextView"
