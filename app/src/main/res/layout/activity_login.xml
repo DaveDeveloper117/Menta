@@ -151,6 +151,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:checked="false"
+        android:saveEnabled="true"
         android:text="Mantener sesión"
         app:layout_constraintStart_toStartOf="@+id/passwordTextField"
         app:layout_constraintTop_toBottomOf="@+id/passwordTextField"

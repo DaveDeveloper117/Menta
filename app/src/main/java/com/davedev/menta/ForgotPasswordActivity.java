@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -15,6 +16,9 @@ import android.widget.TextView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
+
+import java.util.Objects;
+import java.util.regex.Pattern;
 
 public class ForgotPasswordActivity extends AppCompatActivity {
     TextView descTextView,  titleTextView, suppTextView, newAccTextView,registerTextView, forgotPassTextView;
@@ -60,6 +64,13 @@ public class ForgotPasswordActivity extends AppCompatActivity {
         newAccTextView.setAnimation(upMove);
         registerTextView.setAnimation(upMove);
 
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                validateField();
+            }
+        });
+
         registerTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -74,5 +85,19 @@ public class ForgotPasswordActivity extends AppCompatActivity {
         Intent intent = new Intent(ForgotPasswordActivity.this, LoginActivity.class);
         startActivity(intent);
         finish();
+    }
+
+    public  void validateField(){
+        String email = Objects.requireNonNull(emailTextInputEditText.getText()).toString().trim();
+
+        if (email.isEmpty() || !Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+            //userTextInputEditText.setError("Ingresa un correo válido");
+            userTextField.setError("Ingresa un correo válido");
+
+        } else {
+            userTextField.setError(null);
+            userTextField.setErrorEnabled(false);
+        }
+
     }
 }
