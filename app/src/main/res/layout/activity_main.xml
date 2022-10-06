@@ -23,9 +23,9 @@
 
     <TextView
         android:id="@+id/titleTextView"
-        style="@style/TextAppearance.MdcTypographyStyles.Headline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/hallway"
         android:text="@string/app_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,14 +38,14 @@
         android:layout_marginStart="100dp"
         android:layout_marginEnd="100dp"
         android:adjustViewBounds="true"
+        android:contentDescription="@string/logoImage"
         android:cropToPadding="true"
-        android:scaleType="fitCenter"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.4"
-        app:srcCompat="@drawable/ic_potted_plant_24"
-        android:contentDescription="@string/logoImage" />
+        app:srcCompat="@drawable/ic_menta_svg" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
