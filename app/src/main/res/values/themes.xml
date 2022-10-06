@@ -23,7 +23,7 @@
     </style>
 
     <style name="ThemeOverlay.App.FloatingActionButton" parent="">
-        <item name="colorSecondary">@color/apricot</item>
+        <item name="colorSecondary">@color/antique_brass</item>
         <item name="colorOnSecondary">@color/liver_chestnut</item>
         <item name="colorOnSurface">@color/liver_chestnut</item>
     </style>

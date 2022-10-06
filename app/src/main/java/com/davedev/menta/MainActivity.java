@@ -11,9 +11,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    ImageView logoImageView;
+    ImageView logoImageView, bgImageView;
     TextView titleTextView;
-    Animation fadeIn;
+    Animation fadeIn, fadeOut;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,13 +21,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //Logo Image
         logoImageView = findViewById(R.id.logoImageView);
+        bgImageView = findViewById(R.id.bgImageView);
         //Text Logo
         titleTextView = findViewById(R.id.titleTextView);
         //Animation
         fadeIn = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fade_in);
+        fadeOut = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fade_out);
 
         //Set Animations
         logoImageView.setAnimation(fadeIn);
+        bgImageView.setAnimation(fadeOut);
         titleTextView.setAnimation(fadeIn);
 
         new Handler().postDelayed(new Runnable() {
