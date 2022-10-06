@@ -25,12 +25,13 @@
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:adjustViewBounds="true"
+        android:contentDescription="@string/backgroundImage1"
         android:cropToPadding="true"
-        android:scaleType="fitCenter"
+        android:rotationY="-180"
+        android:scaleType="fitEnd"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/plant_bottom_left"
-        android:contentDescription="@string/backgroundImage1" />
+        app:srcCompat="@drawable/plant_top_right" />
 
     <ImageView
         android:id="@+id/bgRightImageView"
@@ -59,7 +60,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_potted_plant_24"
+        app:srcCompat="@drawable/ic_menta_svg"
         android:contentDescription="@string/logoImage" />
 
     <TextView
