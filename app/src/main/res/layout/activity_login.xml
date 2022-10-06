@@ -61,7 +61,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_menta_svg"
+        app:srcCompat="@drawable/ic_potted_plant_24"
         android:contentDescription="@string/logoImage" />
 
     <TextView
@@ -147,7 +147,7 @@
 
     <RadioButton
         android:id="@+id/radioRememberButton"
-        style="@style/TextAppearance.MdcTypographyStyles.Body2"
+        style="@style/TextAppearance.MdcTypographyStyles.Caption"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"

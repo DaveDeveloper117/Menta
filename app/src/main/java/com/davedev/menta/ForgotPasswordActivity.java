@@ -13,12 +13,14 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
 public class ForgotPasswordActivity extends AppCompatActivity {
     TextView descTextView,  titleTextView, suppTextView, newAccTextView,registerTextView, forgotPassTextView;
     ImageView logoImageView, bgRightImageView, bgLeftImageView;
     TextInputLayout userTextField;
+    TextInputEditText emailTextInputEditText;
     Button loginButton;
     Animation downMove, upMove, leftMove, rightMove, fadeIn;
 
@@ -35,6 +37,8 @@ public class ForgotPasswordActivity extends AppCompatActivity {
         logoImageView = findViewById(R.id.logoImageView);
         bgRightImageView = findViewById(R.id.bgRightImageView);
         bgLeftImageView = findViewById(R.id.bgLeftImageView);
+        //EditText
+        emailTextInputEditText = findViewById(R.id.emailTextInputEditText);
         //TextInput
         userTextField = findViewById(R.id.userTextField);
         //Button
