@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -16,6 +17,9 @@ import com.google.android.material.divider.MaterialDivider;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
+
+import java.util.Objects;
+import java.util.regex.Pattern;
 
 public class LoginActivity extends AppCompatActivity {
     TextView descTextView,  titleTextView, suppTextView, newAccTextView,registerTextView, forgotPassTextView;
@@ -103,11 +107,42 @@ public class LoginActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                validateField();
+            }
+        });
     }
     @Override
     public void onBackPressed() {
         Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
         startActivity(intent);
         finish();
+    }
+    public  void validateField(){
+        String email = Objects.requireNonNull(userTextInputEditText.getText()).toString().trim();
+        String password = Objects.requireNonNull(passwordTextInputEditText.getText()).toString().trim();
+
+        if (email.isEmpty() || !Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+            //userTextInputEditText.setError("Ingresa un correo válido");
+            userTextField.setError("Ingresa un correo válido");
+
+        } else {
+            userTextInputEditText.setError(null);
+            userTextField.setErrorEnabled(false);
+        }
+
+        if (password.isEmpty() || password.length() < 8) {
+           // passwordTextInputEditText.setError("Mínimo 8 caracteres");
+            passwordTextField.setError("Mínimo 8 caracteres");
+        } else if (!Pattern.compile("[0-9]").matcher(password).find()) {
+            //passwordTextInputEditText.setError("Mínimo un número");
+            passwordTextField.setError("Mínimo un número");
+        } else {
+            passwordTextInputEditText.setError(null);
+            passwordTextField.setErrorEnabled(false);
+        }
     }
 }
