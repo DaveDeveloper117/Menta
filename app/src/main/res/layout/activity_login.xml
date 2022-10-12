@@ -55,12 +55,12 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="150dp"
         android:adjustViewBounds="true"
+        android:contentDescription="@string/logoImage"
         android:cropToPadding="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_potted_plant_24"
-        android:contentDescription="@string/logoImage" />
+        app:srcCompat="@drawable/ic_potted_plant_24" />
 
     <TextView
         android:id="@+id/descTextView"
