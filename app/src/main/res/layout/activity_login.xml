@@ -62,7 +62,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_potted_plant_24" />
+        app:srcCompat="@drawable/ic_menta" />
 
     <TextView
         android:id="@+id/descTextView"

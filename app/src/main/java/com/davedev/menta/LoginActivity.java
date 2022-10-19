@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.divider.MaterialDivider;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -130,8 +131,10 @@ public class LoginActivity extends AppCompatActivity {
             userTextField.setError("Ingresa un correo válido");
 
         } else {
-            userTextInputEditText.setError(null);
+            //userTextInputEditText.setError(null);
             userTextField.setErrorEnabled(false);
+            userTextField.setError(null);
+            //startSession(email, password);
         }
 
         if (password.isEmpty() || password.length() < 8) {
@@ -141,8 +144,22 @@ public class LoginActivity extends AppCompatActivity {
             //passwordTextInputEditText.setError("Mínimo un número");
             passwordTextField.setError("Mínimo un número");
         } else {
-            passwordTextInputEditText.setError(null);
+            //passwordTextInputEditText.setError(null);
             passwordTextField.setErrorEnabled(false);
+            passwordTextField.setError(null);
+            //startSession(email, password);
+        }
+        startSession(email, password);
+    }
+
+    public void startSession(String email, String password){
+        if (email.isEmpty() || password.isEmpty()){
+            Toast.makeText(LoginActivity.this, "Ocurrió un error intente nuevamente", Toast.LENGTH_SHORT).show();
+        } else {
+            Intent intent = new Intent(LoginActivity.this, DashboardActivity.class);
+            startActivity(intent);
+            finish();
         }
     }
+
 }

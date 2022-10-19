@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Patterns;
 import android.view.View;
 import android.view.animation.Animation;
@@ -12,6 +13,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.textfield.TextInputEditText;
@@ -105,7 +107,6 @@ public class SignUpActivity extends AppCompatActivity {
         if (email.isEmpty() || !Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             //userTextInputEditText.setError("Ingresa un correo válido");
             emailTextField.setError("Ingresa un correo válido");
-
         } else {
             emailTextField.setError(null);
             emailTextField.setErrorEnabled(false);
@@ -137,6 +138,16 @@ public class SignUpActivity extends AppCompatActivity {
         } else {
             repeatPasswordTextField.setError(null);
             repeatPasswordTextField.setErrorEnabled(false);
+        }
+        startSession(email, password);
+    }
+    public void startSession(String email, String password){
+        if (email.isEmpty() || password.isEmpty()){
+            Toast.makeText(SignUpActivity.this, "Falló el registro", Toast.LENGTH_SHORT).show();
+        } else {
+            Intent intent = new Intent(SignUpActivity.this, DashboardActivity.class);
+            startActivity(intent);
+            finish();
         }
     }
 }

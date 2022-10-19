@@ -8,6 +8,12 @@
     <string name="logoImage">logoImage</string>
     <string name="backgroundImage1">bgImage1</string>
     <string name="backgroundImage2">bgImage2</string>
+    <string name="content_description_media">sample</string>
+    <string name="title">Título</string>
+    <string name="secondary_text">Subtítulo</string>
+    <string name="supporting_text">Lorem ipsum dolor sit amet.</string>
+    <string name="action_1">Acción 1</string>
+    <string name="action_2">Acción 2</string>
 
     <style name="TextAppearance.MdcTypographyStyles.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
         <item name="fontFamily">@font/overpass</item>
