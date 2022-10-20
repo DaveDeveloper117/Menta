@@ -18,7 +18,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bg_signup" />
+        app:srcCompat="@drawable/bg_signup"
+        android:contentDescription="@string/backgroundImage1" />
 
     <ImageView
         android:id="@+id/bgLeftImageView"
