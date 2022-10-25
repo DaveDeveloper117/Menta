@@ -44,57 +44,28 @@
         app:layout_constraintTop_toBottomOf="@+id/coordinatorLayout" />
 
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/searchTextField"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:hint="Buscar Plantas"
-        app:boxCornerRadiusBottomEnd="16dp"
-        app:boxCornerRadiusBottomStart="16dp"
-        app:boxCornerRadiusTopEnd="16dp"
-        app:boxCornerRadiusTopStart="16dp"
-        app:boxStrokeWidth="2dp"
-        app:boxStrokeWidthFocused="3dp"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:startIconDrawable="@drawable/ic_round_search_24"
-        tools:ignore="HardcodedText">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/searchTextInputEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
     <HorizontalScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:scrollbarSize="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchTextField">
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="horizontal"
             android:padding="8dp">
 
             <com.google.android.material.card.MaterialCardView
-                android:id="@+id/card"
+                android:id="@+id/cardInterior"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                app:cardCornerRadius="8dp"
-                app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.LargeComponent">
+                app:cardCornerRadius="8dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -104,14 +75,15 @@
                     <!-- Media -->
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="194dp"
                         android:contentDescription="@string/content_description_media"
                         android:scaleType="centerCrop"
-                        app:srcCompat="@drawable/sample" />
+                        app:srcCompat="@drawable/plantas_interior" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="130dp"
+                        android:gravity="start"
                         android:orientation="vertical"
                         android:padding="8dp">
 
@@ -119,22 +91,23 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/title"
+                            android:text="Plantas de interior"
                             android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline6" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:text="@string/secondary_text"
+                            android:text="Conoce la variedad"
                             android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
                             android:textColor="?android:attr/textColorSecondary" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:text="@string/supporting_text"
+                            android:layout_gravity="start"
+                            android:layout_marginTop="0dp"
+                            android:text="de flores y plantas que puedes tener dentro en casa"
                             android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
                             android:textColor="?android:attr/textColorSecondary" />
 
@@ -152,14 +125,14 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="8dp"
-                            android:text="@string/action_1"
+                            android:text="Ver"
                             android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1" />
 
                         <com.google.android.material.button.MaterialButton
                             style="?attr/borderlessButtonStyle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/action_2"
+                            android:text="Encontrar"
                             android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1" />
                     </LinearLayout>
 
@@ -168,7 +141,7 @@
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
-                android:id="@+id/card_2"
+                android:id="@+id/cardExterior"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
@@ -183,14 +156,14 @@
                     <!-- Media -->
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="194dp"
                         android:contentDescription="@string/content_description_media"
                         android:scaleType="centerCrop"
-                        app:srcCompat="@drawable/sample" />
+                        app:srcCompat="@drawable/plantas_exterior" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="130dp"
                         android:orientation="vertical"
                         android:padding="8dp">
 
@@ -198,22 +171,22 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/title"
+                            android:text="Plantas de exterior"
                             android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline6" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:text="@string/secondary_text"
+                            android:text="Descubre las plantas"
                             android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
                             android:textColor="?android:attr/textColorSecondary" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:text="@string/supporting_text"
+                            android:layout_marginTop="0dp"
+                            android:text="y flores que puedes tener en tu jardín"
                             android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
                             android:textColor="?android:attr/textColorSecondary" />
 
@@ -231,14 +204,14 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="8dp"
-                            android:text="@string/action_1"
+                            android:text="Ver"
                             android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1" />
 
                         <com.google.android.material.button.MaterialButton
                             style="?attr/borderlessButtonStyle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/action_2"
+                            android:text="Encontrar"
                             android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1" />
                     </LinearLayout>
 
@@ -262,14 +235,14 @@
                     <!-- Media -->
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="194dp"
                         android:contentDescription="@string/content_description_media"
                         android:scaleType="centerCrop"
-                        app:srcCompat="@drawable/sample" />
+                        app:srcCompat="@drawable/plantas_temporada" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="130dp"
                         android:orientation="vertical"
                         android:padding="8dp">
 
@@ -277,22 +250,22 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/title"
+                            android:text="Plantas de temporada"
                             android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline6" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:text="@string/secondary_text"
+                            android:text="Las plantas"
                             android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
                             android:textColor="?android:attr/textColorSecondary" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:text="@string/supporting_text"
+                            android:layout_marginTop="0dp"
+                            android:text="por fecha y epoca del año"
                             android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
                             android:textColor="?android:attr/textColorSecondary" />
 
@@ -310,14 +283,14 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="8dp"
-                            android:text="@string/action_1"
+                            android:text="Ver"
                             android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1" />
 
                         <com.google.android.material.button.MaterialButton
                             style="?attr/borderlessButtonStyle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/action_2"
+                            android:text="Encontrar"
                             android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1" />
                     </LinearLayout>
 
