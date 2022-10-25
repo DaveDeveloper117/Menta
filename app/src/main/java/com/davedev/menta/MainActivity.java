@@ -11,9 +11,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    ImageView logoImageView, bgImageView;
+    ImageView logoImageView;
     TextView titleTextView;
-    Animation fadeIn, fadeOut;
+    Animation fadeIn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
