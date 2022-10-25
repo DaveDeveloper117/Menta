@@ -68,6 +68,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:clickable="true"
+                android:focusable="true"
                 app:cardCornerRadius="8dp">
 
                 <LinearLayout
@@ -116,7 +118,7 @@
 
                     </LinearLayout>
 
-                    <!-- Buttons -->
+                    <!-- Buttons
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -137,7 +139,7 @@
                             android:layout_height="wrap_content"
                             android:text="Encontrar"
                             android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1" />
-                    </LinearLayout>
+                    </LinearLayout> -->
 
                 </LinearLayout>
 
@@ -149,6 +151,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 app:cardCornerRadius="8dp"
+                android:clickable="true"
+                android:focusable="true"
                 app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.LargeComponent">
 
                 <LinearLayout
@@ -195,7 +199,7 @@
 
                     </LinearLayout>
 
-                    <!-- Buttons -->
+                    <!-- Buttons
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -216,7 +220,7 @@
                             android:layout_height="wrap_content"
                             android:text="Encontrar"
                             android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1" />
-                    </LinearLayout>
+                    </LinearLayout> -->
 
                 </LinearLayout>
 
@@ -228,6 +232,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 app:cardCornerRadius="8dp"
+                android:clickable="true"
+                android:focusable="true"
                 app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.LargeComponent">
 
                 <LinearLayout
@@ -274,7 +280,7 @@
 
                     </LinearLayout>
 
-                    <!-- Buttons -->
+                    <!-- Buttons
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -295,7 +301,7 @@
                             android:layout_height="wrap_content"
                             android:text="Encontrar"
                             android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1" />
-                    </LinearLayout>
+                    </LinearLayout> -->
 
                 </LinearLayout>
 

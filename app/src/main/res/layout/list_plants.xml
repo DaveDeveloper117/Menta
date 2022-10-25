@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/plantCardView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/plantImage"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                app:srcCompat="@drawable/sample" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="8dp"
+                android:layout_toEndOf="@id/plantImage"
+                android:layout_toRightOf="@id/plantImage"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titlePlant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="Title"
+                    android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1" />
+
+                <TextView
+                    android:id="@+id/descPlant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2" />
+
+                <TextView
+                    android:id="@+id/supportPlant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Care and indications"
+                    android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutFabs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayoutText"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_toEndOf="@id/plantImage"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/fabHeight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:layout_margin="16dp"
+                        app:fabSize="mini"
+                        app:srcCompat="@drawable/ic_baseline_height_24"
+                        />
+
+                    <TextView
+                        android:id="@+id/titleHeight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
+                        android:text="Altura" />
+
+                    <TextView
+                        android:id="@+id/infoHeight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
+                        android:text="0cm" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/fabHumidity"
+                        android:layout_width="wrap_content"
+                        app:fabSize="mini"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        app:srcCompat="@drawable/ic_baseline_opacity_24"
+                        android:layout_margin="16dp" />
+
+                    <TextView
+                        android:id="@+id/titleHumidity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
+                        android:text="Humedad" />
+
+                    <TextView
+                        android:id="@+id/infoHumidity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
+                        android:text="0%" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/fabTemperature"
+                        android:layout_width="wrap_content"
+                        app:fabSize="mini"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        app:srcCompat="@drawable/ic_baseline_device_thermostat_24"
+                        android:layout_margin="16dp" />
+
+                    <TextView
+                        android:id="@+id/titleTemperature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
+                        android:text="Temperatura" />
+
+                    <TextView
+                        android:id="@+id/infoTemperature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
+                        android:text="0°c" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
