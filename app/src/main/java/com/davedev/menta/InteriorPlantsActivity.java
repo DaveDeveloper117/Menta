@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -114,7 +115,7 @@ public class InteriorPlantsActivity extends AppCompatActivity{
             }
 
             if (filteredList.isEmpty()){
-                Toast.makeText(this, "Busqueda no encontrada", Toast.LENGTH_SHORT).show();
+                Log.d("tag", "No info found");
             } else {
                 listAdapterPlant.setFilteredList(filteredList);
             }
