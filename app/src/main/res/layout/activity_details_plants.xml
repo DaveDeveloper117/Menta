@@ -1,95 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/plantCardView"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:animateLayoutChanges="true"
-    app:cardCornerRadius="16dp"
-    app:cardElevation="4dp"
-    app:cardUseCompatPadding="true">
+    tools:context=".DetailsPlantsActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:animateLayoutChanges="true"
-        android:orientation="vertical">
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <RelativeLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="8dp">
+            android:layout_height="wrap_content">
 
-            <ImageView
-                android:id="@+id/plantImage"
-                android:layout_width="match_parent"
-                android:layout_height="190dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_gravity="center"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="8dp"
-                android:scaleType="centerCrop"
-                android:layout_marginEnd="4dp"
-                android:padding="0dp"
-                app:srcCompat="@drawable/sample" />
-
-            <LinearLayout
-                android:padding="8dp"
-                android:id="@+id/linearLayoutText"
+            <TextView
+                android:id="@+id/descNamePlant"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/plantImage"
-                android:layout_alignStart="@+id/plantImage"
-                android:layout_alignEnd="@+id/plantImage"
-                android:layout_marginStart="0dp"
+                android:text="Nombre Planta"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/descImagePlant"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
                 android:layout_marginTop="8dp"
-                android:layout_marginEnd="0dp"
-                android:layout_marginBottom="0dp"
-                android:layout_toRightOf="@id/plantImage"
-                android:orientation="vertical"
-                android:visibility="visible">
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/descNamePlant"
+                app:srcCompat="@drawable/sample" />
 
-                <TextView
-                    android:id="@+id/titlePlant"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:text="Title"
-                    android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline6" />
+            <TextView
+                android:id="@+id/descInfoPlant"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Descripcion Planta"
+                app:layout_constraintEnd_toEndOf="@+id/descImagePlant"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline6"
+                app:layout_constraintStart_toStartOf="@+id/descImagePlant"
+                app:layout_constraintTop_toBottomOf="@+id/descImagePlant" />
 
-                <TextView
-                    android:id="@+id/descPlant"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Description"
-                    android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1" />
-
-                <TextView
-                    android:id="@+id/supportPlant"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Care and indications"
-                    android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2" />
-
-            </LinearLayout>
+            <TextView
+                android:id="@+id/descCarePlant"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Cuidados Planta"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1"
+                app:layout_constraintEnd_toEndOf="@+id/descImagePlant"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/descImagePlant"
+                app:layout_constraintTop_toBottomOf="@+id/descInfoPlant" />
 
             <LinearLayout
                 android:id="@+id/linearLayoutFabs"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/linearLayoutText"
-                android:layout_alignStart="@+id/linearLayoutText"
-                android:layout_alignEnd="@+id/linearLayoutText"
-                android:layout_marginStart="0dp"
-                android:layout_marginTop="-1dp"
-                android:layout_marginEnd="0dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
                 android:gravity="center"
                 android:orientation="horizontal"
-                android:visibility="visible">
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/descCarePlant"
+                app:layout_constraintStart_toStartOf="@+id/descCarePlant"
+                app:layout_constraintTop_toBottomOf="@+id/descCarePlant">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -106,7 +91,6 @@
                         android:layout_margin="16dp"
                         android:clickable="false"
                         android:focusable="false"
-                        app:fabSize="mini"
                         app:srcCompat="@drawable/ic_baseline_height_24" />
 
                     <TextView
@@ -118,7 +102,7 @@
                         android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2" />
 
                     <TextView
-                        android:id="@+id/infoHeight"
+                        android:id="@+id/descInfoHeight"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -142,7 +126,6 @@
                         android:layout_margin="16dp"
                         android:clickable="false"
                         android:focusable="false"
-                        app:fabSize="mini"
                         app:srcCompat="@drawable/ic_baseline_opacity_24" />
 
                     <TextView
@@ -154,7 +137,7 @@
                         android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2" />
 
                     <TextView
-                        android:id="@+id/infoHumidity"
+                        android:id="@+id/descInfoHumidity"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -178,7 +161,6 @@
                         android:layout_margin="16dp"
                         android:clickable="false"
                         android:focusable="false"
-                        app:fabSize="mini"
                         app:srcCompat="@drawable/ic_baseline_device_thermostat_24" />
 
                     <TextView
@@ -190,7 +172,7 @@
                         android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2" />
 
                     <TextView
-                        android:id="@+id/infoTemperature"
+                        android:id="@+id/descInfoTemperature"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -202,8 +184,9 @@
 
             </LinearLayout>
 
-        </RelativeLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </LinearLayout>
+    </ScrollView>
 
-</androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

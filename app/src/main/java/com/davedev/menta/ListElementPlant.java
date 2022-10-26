@@ -1,9 +1,11 @@
 package com.davedev.menta;
 
-import android.media.Image;
+import android.graphics.drawable.Drawable;
 
-public class ListElementPlant {
-    public String imagePlant;
+import java.io.Serializable;
+
+public class ListElementPlant implements Serializable {
+    public int imagePlant;
     public String namePlant;
     public String descriptionPlant;
     public String supportPlant;
@@ -11,7 +13,7 @@ public class ListElementPlant {
     public String humidityPlant;
     public String temperaturePlant;
 
-    public ListElementPlant(String imagePlant, String namePlant, String descriptionPlant, String supportPlant, String heightPlant, String humidityPlant, String temperaturePlant) {
+    public ListElementPlant(int imagePlant, String namePlant, String descriptionPlant, String supportPlant, String heightPlant, String humidityPlant, String temperaturePlant) {
         this.imagePlant = imagePlant;
         this.namePlant = namePlant;
         this.descriptionPlant = descriptionPlant;
@@ -21,13 +23,11 @@ public class ListElementPlant {
         this.temperaturePlant = temperaturePlant;
     }
 
-    public String getImagePlant() {
-        return imagePlant;
-    }
-
-    public void setImagePlant(String imagePlant) {
+    public void setImagePlant(int imagePlant) {
         this.imagePlant = imagePlant;
     }
+
+    public int getImagePlant() {return  imagePlant;}
 
     public String getNamePlant() {
         return namePlant;

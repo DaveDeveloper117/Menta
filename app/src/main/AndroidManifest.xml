@@ -13,6 +13,13 @@
         android:theme="@style/Theme.Menta"
         tools:targetApi="31">
         <activity
+            android:name=".DetailsPlantsActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".SeasonalPlantsActivity"
             android:exported="false"
             android:screenOrientation="portrait"
@@ -23,18 +30,18 @@
         </activity>
         <activity
             android:name=".ExteriorPlantsActivity"
+            android:exported="false"
             android:screenOrientation="portrait"
-            tools:ignore="LockedOrientationActivity"
-            android:exported="false">
+            tools:ignore="LockedOrientationActivity">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".InteriorPlantsActivity"
+            android:exported="false"
             android:screenOrientation="portrait"
-            tools:ignore="LockedOrientationActivity"
-            android:exported="false">
+            tools:ignore="LockedOrientationActivity">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

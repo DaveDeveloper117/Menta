@@ -5,40 +5,57 @@ import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ListAdapterPlant extends RecyclerView.Adapter<ListAdapterPlant.ViewHolder> {
     private List<ListElementPlant> mData;
     private LayoutInflater mInflater;
     private Context context;
+    final ListAdapterPlant.OnItemClickListener listener;
 
-    public ListAdapterPlant(List<ListElementPlant> itemList, Context context){
+    public void setFilteredList(List<ListElementPlant> filteredList){
+        this.mData = filteredList;
+        notifyDataSetChanged();
+    }
+
+    public interface  OnItemClickListener{
+        void onItemClick(ListElementPlant item);
+    }
+
+    public ListAdapterPlant(List<ListElementPlant> itemList, Context context, ListAdapterPlant.OnItemClickListener listener){
         this.mInflater = LayoutInflater.from(context);
         this.context = context;
         this.mData = itemList;
+        this.listener = listener;
+
     }
     @Override
     public int getItemCount(){return mData.size();}
 
     @Override
     public ListAdapterPlant.ViewHolder onCreateViewHolder(ViewGroup parent, int  viewType){
-        View view = mInflater.inflate(R.layout.list_plants, null);
+        View view = mInflater.from(parent.getContext()).inflate(R.layout.list_plants, null, false);
         return  new ListAdapterPlant.ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(final ListAdapterPlant.ViewHolder holder, final int position){
+        holder.plantCardView.setAnimation(AnimationUtils.loadAnimation(context, R.anim.fade_in));
         holder.bindData(mData.get(position));
     }
 
     public  void setItems(List<ListElementPlant> items) { mData = items; }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
+        CardView plantCardView;
         ImageView plantImageView;
         TextView titlePlant, descPlant, carePlant, heightPlant, humidityPlant, tempPlant;
 
@@ -52,11 +69,23 @@ public class ListAdapterPlant extends RecyclerView.Adapter<ListAdapterPlant.View
             heightPlant = itemView.findViewById(R.id.infoHeight);
             humidityPlant = itemView.findViewById(R.id.infoHumidity);
             tempPlant = itemView.findViewById(R.id.infoTemperature);
+            plantCardView = itemView.findViewById(R.id.plantCardView);
         }
 
         void  bindData(final ListElementPlant item){
-            plantImageView.setImageDrawable();
-            //TODO bindData investigar como agregar imagenes video min 23:57
+            plantImageView.setImageResource(item.getImagePlant());
+            titlePlant.setText(item.getNamePlant());
+            descPlant.setText(item.getDescriptionPlant());
+            carePlant.setText(item.getSupportPlant());
+            heightPlant.setText(item.getHeightPlant());
+            humidityPlant.setText(item.getHumidityPlant());
+            tempPlant.setText(item.getTemperaturePlant());
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    listener.onItemClick(item);
+                }
+            });
         }
     }
 }
