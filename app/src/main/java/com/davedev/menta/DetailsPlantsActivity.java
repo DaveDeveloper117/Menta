@@ -37,7 +37,7 @@ public class DetailsPlantsActivity extends AppCompatActivity {
         leftMove = AnimationUtils.loadAnimation(DetailsPlantsActivity.this, R.anim.left_move);
         rightMove = AnimationUtils.loadAnimation(DetailsPlantsActivity.this, R.anim.right_move);
 
-        descNamePlant.setAnimation(downMove);
+        descNamePlant.setAnimation(upMove);
         descImagePlant.setAnimation(upMove);
         descInfoPlant.setAnimation(leftMove);
         descCarePlant.setAnimation(rightMove);

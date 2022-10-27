@@ -64,6 +64,7 @@
                     android:id="@+id/descPlant"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:visibility="gone"
                     android:text="Description"
                     android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1" />
 
