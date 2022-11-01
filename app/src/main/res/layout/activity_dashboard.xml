@@ -22,11 +22,11 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center|center_vertical"
             android:layout_margin="16dp"
-            app:elevation="0dp"
-            android:clickable="false"
-            android:focusable="false"
-            android:enabled="false"
+            android:clickable="true"
             android:contentDescription="@string/fab_content_desc"
+            android:enabled="true"
+            android:focusable="true"
+            app:elevation="0dp"
             app:srcCompat="@drawable/ic_menta" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
