@@ -47,17 +47,11 @@ public class DashboardActivity extends AppCompatActivity {
         final boolean isDarkModeOn = sharedPreferences.getBoolean("isDarkModeOn", false);
 
         if (isDarkModeOn) {
-            AppCompatDelegate
-                    .setDefaultNightMode(
-                            AppCompatDelegate
-                                    .MODE_NIGHT_YES);
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
 
         }
         else {
-            AppCompatDelegate
-                    .setDefaultNightMode(
-                            AppCompatDelegate
-                                    .MODE_NIGHT_NO);
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
         }
 
@@ -65,32 +59,21 @@ public class DashboardActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (isDarkModeOn) {
-
                     // if dark mode is on it
                     // will turn it off
-                    AppCompatDelegate
-                            .setDefaultNightMode(
-                                    AppCompatDelegate
-                                            .MODE_NIGHT_NO);
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
                     // it will set isDarkModeOn
                     // boolean to false
-                    editor.putBoolean(
-                            "isDarkModeOn", false);
+                    editor.putBoolean("isDarkModeOn", false);
                     editor.apply();
                 }
                 else {
-
                     // if dark mode is off
                     // it will turn it on
-                    AppCompatDelegate
-                            .setDefaultNightMode(
-                                    AppCompatDelegate
-                                            .MODE_NIGHT_YES);
-
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
                     // it will set isDarkModeOn
                     // boolean to true
-                    editor.putBoolean(
-                            "isDarkModeOn", true);
+                    editor.putBoolean("isDarkModeOn", true);
                     editor.apply();
                 }
             }
