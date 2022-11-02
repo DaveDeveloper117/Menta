@@ -27,7 +27,6 @@ public class LoginActivity extends AppCompatActivity {
     ImageView logoImageView, bgRightImageView, bgLeftImageView;
     TextInputLayout userTextField, passwordTextField;
     TextInputEditText userTextInputEditText, passwordTextInputEditText;
-    RadioButton radioRememberButton;
     Button loginButton;
     FloatingActionButton facebookFab, googleFab, appleFab;
     Animation downMove, upMove, leftMove, rightMove, fadeIn;
@@ -55,7 +54,6 @@ public class LoginActivity extends AppCompatActivity {
         userTextInputEditText = findViewById(R.id.userTextInputEditText);
         passwordTextInputEditText = findViewById(R.id.passwordTextInputEditText);
         //RadioButton
-        radioRememberButton = findViewById(R.id.radioRememberButton);
         //Button
         loginButton = findViewById(R.id.loginButton);
         //Dividers
@@ -79,7 +77,6 @@ public class LoginActivity extends AppCompatActivity {
         titleTextView.setAnimation(downMove);
         userTextField.setAnimation(leftMove);
         passwordTextField.setAnimation(rightMove);
-        radioRememberButton.setAnimation(leftMove);
         forgotPassTextView.setAnimation(rightMove);
         loginButton.setAnimation(upMove);
         suppTextView.setAnimation(upMove);
