@@ -1,7 +1,5 @@
 package com.davedev.menta;
 
-import android.graphics.drawable.Drawable;
-
 import java.io.Serializable;
 
 public class ListElementPlant implements Serializable {

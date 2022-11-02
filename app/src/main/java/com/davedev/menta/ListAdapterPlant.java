@@ -1,24 +1,20 @@
 package com.davedev.menta;
 
 import android.content.Context;
-import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
-
-import java.util.ArrayList;
 import java.util.List;
 
 public class ListAdapterPlant extends RecyclerView.Adapter<ListAdapterPlant.ViewHolder> {
     private List<ListElementPlant> mData;
-    private LayoutInflater mInflater;
-    private Context context;
+    private final LayoutInflater mInflater;
+    private final Context context;
     final ListAdapterPlant.OnItemClickListener listener;
 
     public void setFilteredList(List<ListElementPlant> filteredList){
@@ -42,7 +38,7 @@ public class ListAdapterPlant extends RecyclerView.Adapter<ListAdapterPlant.View
 
     @Override
     public ListAdapterPlant.ViewHolder onCreateViewHolder(ViewGroup parent, int  viewType){
-        View view = mInflater.from(parent.getContext()).inflate(R.layout.list_plants, null, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_plants, null, false);
         return  new ListAdapterPlant.ViewHolder(view);
     }
 
@@ -80,12 +76,7 @@ public class ListAdapterPlant extends RecyclerView.Adapter<ListAdapterPlant.View
             heightPlant.setText(item.getHeightPlant());
             humidityPlant.setText(item.getHumidityPlant());
             tempPlant.setText(item.getTemperaturePlant());
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    listener.onItemClick(item);
-                }
-            });
+            itemView.setOnClickListener(v -> listener.onItemClick(item));
         }
     }
 }

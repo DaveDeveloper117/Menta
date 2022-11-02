@@ -4,11 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -83,12 +81,7 @@ public class FlowersActivity extends AppCompatActivity {
                 "0%",
                 "0°C"));
 
-        listAdapterPlant = new ListAdapterPlant(elementPlants, this, new ListAdapterPlant.OnItemClickListener() {
-            @Override
-            public void onItemClick(ListElementPlant item) {
-                moveToDescription(item);
-            }
-        });
+        listAdapterPlant = new ListAdapterPlant(elementPlants, this, this::moveToDescription);
 
         RecyclerView recyclerView = findViewById(R.id.listRecyclerView);
 

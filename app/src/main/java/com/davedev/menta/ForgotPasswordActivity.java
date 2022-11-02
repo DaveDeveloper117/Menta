@@ -5,23 +5,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
-import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.RadioButton;
 import android.widget.TextView;
-
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
-
 import java.util.Objects;
-import java.util.regex.Pattern;
 
 public class ForgotPasswordActivity extends AppCompatActivity {
-    TextView descTextView,  titleTextView, suppTextView, newAccTextView,registerTextView, forgotPassTextView;
+    TextView descTextView,  titleTextView, newAccTextView,registerTextView;
     ImageView logoImageView, bgRightImageView, bgLeftImageView;
     TextInputLayout userTextField;
     TextInputEditText emailTextInputEditText;
@@ -64,20 +58,12 @@ public class ForgotPasswordActivity extends AppCompatActivity {
         newAccTextView.setAnimation(upMove);
         registerTextView.setAnimation(upMove);
 
-        loginButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                validateField();
-            }
-        });
+        loginButton.setOnClickListener(view -> validateField());
 
-        registerTextView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(ForgotPasswordActivity.this, LoginActivity.class);
-                startActivity(intent);
-                finish();
-            }
+        registerTextView.setOnClickListener(view -> {
+            Intent intent = new Intent(ForgotPasswordActivity.this, LoginActivity.class);
+            startActivity(intent);
+            finish();
         });
     }
     @Override
