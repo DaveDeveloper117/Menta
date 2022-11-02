@@ -32,8 +32,10 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
+            <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/descImagePlant"
+                app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Card.Media"
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:layout_marginTop="8dp"
@@ -87,6 +89,7 @@
 
                     <com.google.android.material.floatingactionbutton.FloatingActionButton
                         android:id="@+id/fabHeight"
+                        style="@style/Widget.App.FloatingActionButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="start|center"
@@ -128,6 +131,7 @@
                         android:layout_margin="16dp"
                         android:clickable="false"
                         android:focusable="false"
+                        style="@style/Widget.App.FloatingActionButton"
                         app:srcCompat="@drawable/ic_baseline_opacity_24" />
 
                     <TextView
@@ -163,6 +167,7 @@
                         android:layout_margin="16dp"
                         android:clickable="false"
                         android:focusable="false"
+                        style="@style/Widget.App.FloatingActionButton"
                         app:srcCompat="@drawable/ic_baseline_device_thermostat_24" />
 
                     <TextView

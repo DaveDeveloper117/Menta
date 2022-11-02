@@ -38,7 +38,7 @@ public class DashboardActivity extends AppCompatActivity {
         upMove = AnimationUtils.loadAnimation(DashboardActivity.this, R.anim.up_move);
         fadeIn = AnimationUtils.loadAnimation(DashboardActivity.this, R.anim.fade_in);
 
-        fabLogo.setAnimation(downMove);
+        fabLogo.setAnimation(upMove);
         titleTextView.setAnimation(upMove);
         scrollCards.setAnimation(fadeIn);
 

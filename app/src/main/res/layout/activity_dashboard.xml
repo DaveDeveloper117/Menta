@@ -27,6 +27,7 @@
             android:enabled="true"
             android:focusable="true"
             app:elevation="0dp"
+            style="@style/Widget.App.FloatingActionButton"
             app:srcCompat="@drawable/ic_menta" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
@@ -120,29 +121,6 @@
 
                     </LinearLayout>
 
-                    <!-- Buttons
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
-                        android:orientation="horizontal">
-
-                        <com.google.android.material.button.MaterialButton
-                            style="?attr/borderlessButtonStyle"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="8dp"
-                            android:text="Ver"
-                            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1" />
-
-                        <com.google.android.material.button.MaterialButton
-                            style="?attr/borderlessButtonStyle"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Encontrar"
-                            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1" />
-                    </LinearLayout> -->
-
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
@@ -203,29 +181,6 @@
 
                     </LinearLayout>
 
-                    <!-- Buttons
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
-                        android:orientation="horizontal">
-
-                        <com.google.android.material.button.MaterialButton
-                            style="?attr/borderlessButtonStyle"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="8dp"
-                            android:text="Ver"
-                            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1" />
-
-                        <com.google.android.material.button.MaterialButton
-                            style="?attr/borderlessButtonStyle"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Encontrar"
-                            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1" />
-                    </LinearLayout> -->
-
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
@@ -285,29 +240,6 @@
                             android:textColor="?android:attr/textColorSecondary" />
 
                     </LinearLayout>
-
-                    <!-- Buttons
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
-                        android:orientation="horizontal">
-
-                        <com.google.android.material.button.MaterialButton
-                            style="?attr/borderlessButtonStyle"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="8dp"
-                            android:text="Ver"
-                            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1" />
-
-                        <com.google.android.material.button.MaterialButton
-                            style="?attr/borderlessButtonStyle"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Encontrar"
-                            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1" />
-                    </LinearLayout> -->
 
                 </LinearLayout>
 
