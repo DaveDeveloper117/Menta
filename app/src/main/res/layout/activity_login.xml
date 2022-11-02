@@ -145,28 +145,15 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <RadioButton
-        android:id="@+id/radioRememberButton"
-        style="@style/TextAppearance.MdcTypographyStyles.Caption"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:checked="false"
-        android:saveEnabled="true"
-        android:text="Mantener sesión"
-        app:layout_constraintStart_toStartOf="@+id/passwordTextField"
-        app:layout_constraintTop_toBottomOf="@+id/passwordTextField"
-        tools:ignore="HardcodedText" />
-
     <TextView
         android:id="@+id/forgotPassTextView"
+        style="@style/TextAppearance.MdcTypographyStyles.Body2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/TextAppearance.MdcTypographyStyles.Body2"
+        android:layout_marginTop="16dp"
         android:text="@string/olvidaste_tu_contrase_a"
-        app:layout_constraintBottom_toBottomOf="@+id/radioRememberButton"
         app:layout_constraintEnd_toEndOf="@+id/passwordTextField"
-        app:layout_constraintTop_toTopOf="@+id/radioRememberButton" />
+        app:layout_constraintTop_toBottomOf="@+id/passwordTextField" />
 
     <Button
         android:id="@+id/loginButton"
@@ -178,7 +165,7 @@
         app:cornerRadius="16dp"
         app:layout_constraintEnd_toEndOf="@+id/passwordTextField"
         app:layout_constraintStart_toStartOf="@+id/passwordTextField"
-        app:layout_constraintTop_toBottomOf="@+id/radioRememberButton"
+        app:layout_constraintTop_toBottomOf="@+id/forgotPassTextView"
         tools:ignore="HardcodedText" />
 
     <TextView
