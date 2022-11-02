@@ -19,7 +19,7 @@ public class DashboardActivity extends AppCompatActivity {
     FloatingActionButton fabLogo;
     TextView titleTextView;
     ScrollView scrollCards;
-    MaterialCardView interiorPlants, exteriorPlants, seasonPlants;
+    MaterialCardView interiorPlants, exteriorPlants, seasonPlants, cardFlowers;
     Animation downMove, upMove, fadeIn;
 
     @Override
@@ -33,6 +33,7 @@ public class DashboardActivity extends AppCompatActivity {
         interiorPlants = findViewById(R.id.cardInterior);
         exteriorPlants = findViewById(R.id.cardExterior);
         seasonPlants = findViewById(R.id.cardSeason);
+        cardFlowers = findViewById(R.id.cardFlowers);
 
         downMove = AnimationUtils.loadAnimation(DashboardActivity.this, R.anim.down_move);
         upMove = AnimationUtils.loadAnimation(DashboardActivity.this, R.anim.up_move);
@@ -105,6 +106,16 @@ public class DashboardActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        cardFlowers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DashboardActivity.this, FlowersActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
     }
 
     @Override
