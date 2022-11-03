@@ -38,8 +38,8 @@ public class IntroActivity extends AppCompatActivity {
 
         List<ScreenItem> mList = new ArrayList<>();
         mList.add(new ScreenItem("Title Text 1", "Description 1", R.raw.plants));
-        mList.add(new ScreenItem("Title Text 2", "Description 2", R.raw.plants));
-        mList.add(new ScreenItem("Title Text 3", "Description 3", R.raw.plants));
+        mList.add(new ScreenItem("Title Text 2", "Description 2", R.raw.plant_potted));
+        mList.add(new ScreenItem("Title Text 3", "Description 3", R.raw.phone_plant));
 
         screenPager = findViewById(R.id.screenPager);
         introViewPagerAdapter = new IntroViewPagerAdapter(this, mList);
