@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import com.davedev.menta.menu.DashboardActivity;
 import com.davedev.menta.R;
+import com.davedev.menta.onboarding.IntroActivity;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import java.util.Objects;
@@ -134,7 +135,7 @@ public class SignUpActivity extends AppCompatActivity {
         if (email.isEmpty() || password.isEmpty()){
             Toast.makeText(SignUpActivity.this, "Falló el registro", Toast.LENGTH_SHORT).show();
         } else {
-            Intent intent = new Intent(SignUpActivity.this, DashboardActivity.class);
+            Intent intent = new Intent(SignUpActivity.this, IntroActivity.class);
             startActivity(intent);
             finish();
         }

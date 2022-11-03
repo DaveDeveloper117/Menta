@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.davedev.menta.menu.DashboardActivity;
 import com.davedev.menta.R;
+import com.davedev.menta.onboarding.IntroActivity;
 import com.google.android.material.divider.MaterialDivider;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.textfield.TextInputEditText;
@@ -141,7 +142,7 @@ public class LoginActivity extends AppCompatActivity {
         if (email.isEmpty() || password.isEmpty()){
             Toast.makeText(LoginActivity.this, "Ocurrió un error intente nuevamente", Toast.LENGTH_SHORT).show();
         } else {
-            Intent intent = new Intent(LoginActivity.this, DashboardActivity.class);
+            Intent intent = new Intent(LoginActivity.this, IntroActivity.class);
             startActivity(intent);
             finish();
         }
