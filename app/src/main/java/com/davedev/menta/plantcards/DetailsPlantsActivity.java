@@ -1,4 +1,4 @@
-package com.davedev.menta;
+package com.davedev.menta.plantcards;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
@@ -8,6 +8,9 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.davedev.menta.R;
+import com.davedev.menta.content.InteriorPlantsActivity;
 
 public class DetailsPlantsActivity extends AppCompatActivity {
     TextView descNamePlant, descInfoPlant, descCarePlant, descInfoHeight, descInfoHumidity, descInfoTemperature;

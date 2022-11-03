@@ -1,4 +1,4 @@
-package com.davedev.menta;
+package com.davedev.menta.plantcards;
 
 import java.io.Serializable;
 

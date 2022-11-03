@@ -9,6 +9,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.davedev.menta.login.LoginActivity;
+
 public class MainActivity extends AppCompatActivity {
     ImageView logoImageView;
     TextView titleTextView;

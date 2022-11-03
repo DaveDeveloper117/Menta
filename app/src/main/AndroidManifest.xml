@@ -13,21 +13,21 @@
         android:theme="@style/Theme.Menta"
         tools:targetApi="31">
         <activity
-            android:name=".FlowersActivity"
+            android:name=".content.FlowersActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".DetailsPlantsActivity"
+            android:name=".plantcards.DetailsPlantsActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".SeasonalPlantsActivity"
+            android:name=".content.SeasonalPlantsActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity">
@@ -36,7 +36,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".ExteriorPlantsActivity"
+            android:name=".content.ExteriorPlantsActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity">
@@ -45,7 +45,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".InteriorPlantsActivity"
+            android:name=".content.InteriorPlantsActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity">
@@ -54,7 +54,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".ForgotPasswordActivity"
+            android:name=".login.ForgotPasswordActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity">
@@ -63,7 +63,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".SignUpActivity"
+            android:name=".login.SignUpActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity">
@@ -72,7 +72,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name=".login.LoginActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity">
@@ -81,7 +81,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".DashboardActivity"
+            android:name=".menu.DashboardActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity">

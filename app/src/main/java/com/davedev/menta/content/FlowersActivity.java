@@ -1,4 +1,4 @@
-package com.davedev.menta;
+package com.davedev.menta.content;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
@@ -7,22 +7,28 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+
+import com.davedev.menta.plantcards.DetailsPlantsActivity;
+import com.davedev.menta.plantcards.ListAdapterPlant;
+import com.davedev.menta.plantcards.ListElementPlant;
+import com.davedev.menta.R;
+import com.davedev.menta.menu.DashboardActivity;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class SeasonalPlantsActivity extends AppCompatActivity {
+public class FlowersActivity extends AppCompatActivity {
 
     List<ListElementPlant> elementPlants;
     SearchView searchView;
     ListAdapterPlant listAdapterPlant;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_seasonal_plants);
+        setContentView(R.layout.activity_flowers);
 
-        searchView = findViewById(R.id.searchViewSeasonal);
+        searchView = findViewById(R.id.searchView2);
         searchView.clearFocus();
 
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
@@ -41,46 +47,46 @@ public class SeasonalPlantsActivity extends AppCompatActivity {
         init();
 
     }
+
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(SeasonalPlantsActivity.this, DashboardActivity.class);
+        Intent intent = new Intent(FlowersActivity.this, DashboardActivity.class);
         startActivity(intent);
         finish();
     }
 
     public void init(){
         elementPlants = new ArrayList<>();
-        elementPlants.add(new ListElementPlant((R.drawable.sample), "Seasonal Name Plant",
-                "Seasonal Plant Description",
-                "Seasonal Plant Indications",
+        elementPlants.add(new ListElementPlant((R.drawable.sample), "Flower Name",
+                "Flower Description",
+                "Flower Indication",
                 "0cm",
                 "0%",
                 "0°C"));
-        elementPlants.add(new ListElementPlant((R.drawable.sample), "Seasonal Name Plant",
-                "Seasonal Plant Description",
-                "Seasonal Plant Indications",
+        elementPlants.add(new ListElementPlant((R.drawable.sample), "Flower Name",
+                "Flower Description",
+                "Flower Indication",
                 "0cm",
                 "0%",
                 "0°C"));
-        elementPlants.add(new ListElementPlant((R.drawable.sample), "Seasonal Name Plant",
-                "Seasonal Plant Description",
-                "Seasonal Plant Indications",
+        elementPlants.add(new ListElementPlant((R.drawable.sample), "Flower Name",
+                "Flower Description",
+                "Flower Indication",
                 "0cm",
                 "0%",
                 "0°C"));
-        elementPlants.add(new ListElementPlant((R.drawable.sample), "Seasonal Name Plant",
-                "Seasonal Plant Description",
-                "Seasonal Plant Indications",
+        elementPlants.add(new ListElementPlant((R.drawable.sample), "Flower Name",
+                "Flower Description",
+                "Flower Indication",
                 "0cm",
                 "0%",
                 "0°C"));
-        elementPlants.add(new ListElementPlant((R.drawable.sample), "Seasonal Name Plant",
-                "Seasonal Plant Description",
-                "Seasonal Plant Indications",
+        elementPlants.add(new ListElementPlant((R.drawable.sample), "Flower Name",
+                "Flower Description",
+                "Flower Indication",
                 "0cm",
                 "0%",
                 "0°C"));
-
 
         listAdapterPlant = new ListAdapterPlant(elementPlants, this, this::moveToDescription);
 
@@ -92,7 +98,7 @@ public class SeasonalPlantsActivity extends AppCompatActivity {
     }
 
     public void moveToDescription(ListElementPlant item){
-        Intent intent = new Intent(SeasonalPlantsActivity.this, DetailsPlantsActivity.class);
+        Intent intent = new Intent(FlowersActivity.this, DetailsPlantsActivity.class);
         intent.putExtra("ListElement", item);
         startActivity(intent);
         finish();

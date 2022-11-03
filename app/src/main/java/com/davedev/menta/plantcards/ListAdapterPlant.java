@@ -1,4 +1,4 @@
-package com.davedev.menta;
+package com.davedev.menta.plantcards;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,6 +9,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.davedev.menta.R;
+
 import java.util.List;
 
 public class ListAdapterPlant extends RecyclerView.Adapter<ListAdapterPlant.ViewHolder> {
