@@ -157,11 +157,12 @@
 
     <Button
         android:id="@+id/loginButton"
-        style="@style/TextAppearance.MdcTypographyStyles.Button"
+        android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Iniciar sesión"
+        style="@style/Widget.App.Button"
         app:cornerRadius="16dp"
         app:layout_constraintEnd_toEndOf="@+id/passwordTextField"
         app:layout_constraintStart_toStartOf="@+id/passwordTextField"

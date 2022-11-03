@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="artichoke">#999E89</color>
-    <color name="ebony">#6B705C</color>
-    <color name="rifle_green">#404532</color>
+    <!-- Color Name: Apricot -->
     <color name="apricot">#DCBAA7</color>
+    <!-- Color Name: Antique Brass -->
     <color name="antique_brass">#CB997E</color>
+    <!-- Color Name: Liver Chestnut -->
     <color name="liver_chestnut">#996B52</color>
+    <!-- Color Name: Artichoke -->
+    <color name="artichoke">#999E89</color>
+    <!-- Color Name: Ebony -->
+    <color name="ebony">#6B705C</color>
+    <!-- Color Name: Rifle Green -->
+    <color name="rifle_green">#404532</color>
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
 </resources>

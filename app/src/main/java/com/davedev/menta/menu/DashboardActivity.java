@@ -52,11 +52,9 @@ public class DashboardActivity extends AppCompatActivity {
 
         if (isDarkModeOn) {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-
         }
         else {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-
         }
 
         fabLogo.setOnClickListener(v -> {

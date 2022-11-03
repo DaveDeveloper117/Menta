@@ -22,16 +22,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
-        android:drawableTint="@android:color/white"
-        android:drawableRight="@drawable/ic_round_arrow_forward_ios_24"
         android:id="@+id/btn_next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Button"
         android:layout_marginBottom="8dp"
         android:text="Siguiente"
-        app:cornerRadius="15dp"
+        style="@style/Widget.App.Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -44,10 +42,10 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="32dp"
-        android:drawableTint="@android:color/white"
         android:text="Comenzar"
         android:visibility="invisible"
-        app:cornerRadius="15dp"
+        style="@style/Widget.App.Button"
+        android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
