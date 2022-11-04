@@ -5,13 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
-
 import com.airbnb.lottie.LottieAnimationView;
 import com.davedev.menta.R;
-
 import java.util.List;
 
 public class IntroViewPagerAdapter extends PagerAdapter {
