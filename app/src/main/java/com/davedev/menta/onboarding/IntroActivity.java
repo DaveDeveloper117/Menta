@@ -37,9 +37,9 @@ public class IntroActivity extends AppCompatActivity {
         btnAnim = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.up_move);
 
         List<ScreenItem> mList = new ArrayList<>();
-        mList.add(new ScreenItem("Title Text 1", "Description 1", R.raw.plants));
-        mList.add(new ScreenItem("Title Text 2", "Description 2", R.raw.plant_potted));
-        mList.add(new ScreenItem("Title Text 3", "Description 3", R.raw.phone_plant));
+        mList.add(new ScreenItem("Title Text", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacus sem, lobortis nec semper in, vestibulum id orci.", R.raw.plants));
+        mList.add(new ScreenItem("Title Text", "Curabitur quis erat nec leo aliquet porta. Nullam rutrum, felis eu sodales tincidunt, odio erat porta mi, egestas tincidunt dui justo eget leo.", R.raw.plant_potted));
+        mList.add(new ScreenItem("Title Text", "Vestibulum nunc eros, rutrum vitae interdum nec, dictum eu lorem. Curabitur sed erat enim. Duis molestie varius nisl vel euismod.", R.raw.phone_plant));
 
         screenPager = findViewById(R.id.screenPager);
         introViewPagerAdapter = new IntroViewPagerAdapter(this, mList);
@@ -47,17 +47,14 @@ public class IntroActivity extends AppCompatActivity {
 
         tabIndicator.setupWithViewPager(screenPager);
 
-        btnNext.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                position = screenPager.getCurrentItem();
-                if (position < mList.size()){
-                    position++;
-                    screenPager.setCurrentItem(position);
-                }
-                if (position == mList.size()-1){
-                    loadLastScreen();
-                }
+        btnNext.setOnClickListener(view -> {
+            position = screenPager.getCurrentItem();
+            if (position < mList.size()){
+                position++;
+                screenPager.setCurrentItem(position);
+            }
+            if (position == mList.size()-1){
+                loadLastScreen();
             }
         });
 
@@ -80,13 +77,10 @@ public class IntroActivity extends AppCompatActivity {
             }
         });
 
-        btnStart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(IntroActivity.this, DashboardActivity.class);
-                startActivity(intent);
-                finish();
-            }
+        btnStart.setOnClickListener(view -> {
+            Intent intent = new Intent(IntroActivity.this, DashboardActivity.class);
+            startActivity(intent);
+            finish();
         });
     }
     private void loadLastScreen(){
