@@ -1,24 +1,27 @@
 package com.davedev.menta.menu;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.AppCompatDelegate;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
+
+import com.davedev.menta.R;
 import com.davedev.menta.content.ExteriorPlantsActivity;
 import com.davedev.menta.content.FlowersActivity;
 import com.davedev.menta.content.InteriorPlantsActivity;
-import com.davedev.menta.R;
 import com.davedev.menta.content.SeasonalPlantsActivity;
 import com.google.android.material.card.MaterialCardView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class DashboardActivity extends AppCompatActivity {
+    Button btnInterior, btnExterior, btnSeason, btnFlower;
     FloatingActionButton fabLogo;
     TextView titleTextView;
     ScrollView scrollCards;
@@ -30,6 +33,10 @@ public class DashboardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
+        btnInterior = findViewById(R.id.btnInterior);
+        btnExterior = findViewById(R.id.btnExterior);
+        btnSeason = findViewById(R.id.btnSeason);
+        btnFlower = findViewById(R.id.btnFlower);
         fabLogo = findViewById(R.id.fabLogo);
         titleTextView = findViewById(R.id.titleTextView);
         scrollCards = findViewById(R.id.scrollCards);
@@ -78,25 +85,25 @@ public class DashboardActivity extends AppCompatActivity {
             }
         });
 
-        interiorPlants.setOnClickListener(v -> {
+        btnInterior.setOnClickListener(v -> {
             Intent intent = new Intent(DashboardActivity.this, InteriorPlantsActivity.class);
             startActivity(intent);
             finish();
         });
 
-        exteriorPlants.setOnClickListener(v -> {
+        btnExterior.setOnClickListener(v -> {
             Intent intent = new Intent(DashboardActivity.this, ExteriorPlantsActivity.class);
             startActivity(intent);
             finish();
         });
 
-        seasonPlants.setOnClickListener(v -> {
+        btnSeason.setOnClickListener(v -> {
             Intent intent = new Intent(DashboardActivity.this, SeasonalPlantsActivity.class);
             startActivity(intent);
             finish();
         });
 
-        cardFlowers.setOnClickListener(v -> {
+        btnFlower.setOnClickListener(v -> {
             Intent intent = new Intent(DashboardActivity.this, FlowersActivity.class);
             startActivity(intent);
             finish();

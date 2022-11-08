@@ -76,65 +76,87 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="8dp">
+            android:padding="0dp">
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cardInterior"
+                android:layout_margin="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
                 style="@style/Widget.App.CardView"
                 app:cardPreventCornerOverlap="false"
-                android:clickable="true"
-                android:focusable="true">
+                android:clickable="false"
+                android:focusable="false">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <!-- Media -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/fabInterior"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:fabSize="mini"
+                            style="@style/Widget.App.FloatingActionButton"
+                            app:elevation="0dp"
+                            app:borderWidth="0dp"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:contentDescription="@string/fab_content_desc"
+                            app:srcCompat="@drawable/ic_potted_plant_24"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_gravity="center_vertical"
+                            android:text="Plantas de interior"
+                            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline6" />
+
+
+                    </LinearLayout>
+
                     <com.google.android.material.imageview.ShapeableImageView
                         android:layout_width="match_parent"
-                        android:layout_height="194dp"
+                        android:layout_height="220dp"
                         android:contentDescription="@string/content_description_media"
                         android:scaleType="centerCrop"
                         app:srcCompat="@drawable/plantas_interior"
                         app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
                         app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Card.Media"/>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:padding="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="start"
-                        android:orientation="vertical"
-                        android:padding="8dp">
+                        android:text="Conoce la variedad de plantas que puedes tener dentro en casa"
+                        android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
+                        android:textColor="?android:attr/textColorSecondary" />
 
-                        <!-- Title, secondary and supporting text -->
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Plantas de interior"
-                            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline6" />
+                    <Button
+                        android:id="@+id/btnInterior"
+                        style="@style/Widget.App.Button"
+                        app:cornerRadius="8dp"
+                        android:layout_gravity="end"
+                        android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ver Plantas" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:text="Conoce la variedad"
-                            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
-                            android:textColor="?android:attr/textColorSecondary" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="start"
-                            android:layout_marginTop="0dp"
-                            android:text="de flores y plantas que puedes tener dentro en casa"
-                            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
-                            android:textColor="?android:attr/textColorSecondary" />
-
-                    </LinearLayout>
+                </LinearLayout>
 
                 </LinearLayout>
 
@@ -142,11 +164,11 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cardExterior"
+                android:layout_margin="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:clickable="true"
-                android:focusable="true"
+                android:clickable="false"
+                android:focusable="false"
                 app:cardPreventCornerOverlap="false"
                 style="@style/Widget.App.CardView">
 
@@ -155,10 +177,38 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <!-- Media -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/fabExterior"
+                            style="@style/Widget.App.FloatingActionButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:fabSize="mini"
+                            app:elevation="0dp"
+                            app:borderWidth="0dp"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:contentDescription="@string/fab_content_desc"
+                            app:srcCompat="@drawable/ic_grass_24"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_gravity="center_vertical"
+                            android:text="Plantas de exterior"
+                            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline6" />
+
+                    </LinearLayout>
+
                     <com.google.android.material.imageview.ShapeableImageView
                         android:layout_width="match_parent"
-                        android:layout_height="194dp"
+                        android:layout_height="220dp"
                         android:contentDescription="@string/content_description_media"
                         android:scaleType="centerCrop"
                         app:srcCompat="@drawable/plantas_exterior"
@@ -168,31 +218,26 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:padding="8dp">
-
-                        <!-- Title, secondary and supporting text -->
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Plantas de exterior"
-                            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline6" />
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:orientation="vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:text="Descubre las plantas"
+                            android:text="Descubre las plantas que puedes tener en tu jardín"
                             android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
                             android:textColor="?android:attr/textColorSecondary" />
 
-                        <TextView
+                        <Button
+                            android:id="@+id/btnExterior"
+                            style="@style/Widget.App.Button"
+                            app:cornerRadius="8dp"
+                            android:layout_gravity="end"
+                            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Button"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="0dp"
-                            android:text="y flores que puedes tener en tu jardín"
-                            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
-                            android:textColor="?android:attr/textColorSecondary" />
+                            android:text="Ver Plantas" />
 
                     </LinearLayout>
 
@@ -205,8 +250,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:clickable="true"
-                android:focusable="true"
+                android:clickable="false"
+                android:focusable="false"
                 app:cardPreventCornerOverlap="false"
                 style="@style/Widget.App.CardView">
 
@@ -215,10 +260,38 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <!-- Media -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/fabSeason"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:fabSize="mini"
+                            style="@style/Widget.App.FloatingActionButton"
+                            app:elevation="0dp"
+                            app:borderWidth="0dp"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:contentDescription="@string/fab_content_desc"
+                            app:srcCompat="@drawable/ic_spa_24"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_gravity="center_vertical"
+                            android:text="Plantas de temporada"
+                            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline6" />
+
+                    </LinearLayout>
+
                     <com.google.android.material.imageview.ShapeableImageView
                         android:layout_width="match_parent"
-                        android:layout_height="194dp"
+                        android:layout_height="220dp"
                         android:contentDescription="@string/content_description_media"
                         android:scaleType="centerCrop"
                         app:srcCompat="@drawable/plantas_temporada"
@@ -228,31 +301,26 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:padding="8dp">
-
-                        <!-- Title, secondary and supporting text -->
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Plantas de temporada"
-                            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline6" />
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:orientation="vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:text="Las plantas"
+                            android:text="Las plantas por fecha y epoca del año"
                             android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
                             android:textColor="?android:attr/textColorSecondary" />
 
-                        <TextView
+                        <Button
+                            android:id="@+id/btnSeason"
+                            style="@style/Widget.App.Button"
+                            app:cornerRadius="8dp"
+                            android:layout_gravity="end"
+                            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Button"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="0dp"
-                            android:text="por fecha y epoca del año"
-                            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
-                            android:textColor="?android:attr/textColorSecondary" />
+                            android:text="Ver Plantas" />
 
                     </LinearLayout>
 
@@ -265,8 +333,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:clickable="true"
-                android:focusable="true"
+                android:clickable="false"
+                android:focusable="false"
                 app:cardPreventCornerOverlap="false"
                 style="@style/Widget.App.CardView">
 
@@ -275,44 +343,67 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <!-- Media -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/fabFlower"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:fabSize="mini"
+                            style="@style/Widget.App.FloatingActionButton"
+                            app:elevation="0dp"
+                            app:borderWidth="0dp"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:contentDescription="@string/fab_content_desc"
+                            app:srcCompat="@drawable/ic_flower_24"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_gravity="center_vertical"
+                            android:text="Flores"
+                            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline6" />
+
+                    </LinearLayout>
+
                     <com.google.android.material.imageview.ShapeableImageView
                         android:layout_width="match_parent"
-                        android:layout_height="194dp"
+                        android:layout_height="220dp"
                         android:contentDescription="@string/content_description_media"
                         android:scaleType="centerCrop"
-                        app:srcCompat="@drawable/sample"
+                        app:srcCompat="@drawable/flores_card"
                         app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
                         app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Card.Media"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:padding="8dp">
-
-                        <!-- Title, secondary and supporting text -->
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Flores"
-                            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline6" />
+                        android:gravity="start"
+                        android:padding="8dp"
+                        android:orientation="vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:text="Encuentra todas tus flores"
+                            android:text="Encuentra todas tus flores favoritas y las más llamativas"
                             android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
                             android:textColor="?android:attr/textColorSecondary" />
 
-                        <TextView
+                        <Button
+                            android:id="@+id/btnFlower"
+                            style="@style/Widget.App.Button"
+                            app:cornerRadius="8dp"
+                            android:layout_gravity="end"
+                            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Button"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="0dp"
-                            android:text="favoritas y las más llamativas"
-                            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
-                            android:textColor="?android:attr/textColorSecondary" />
+                            android:text="Ver Flores" />
 
                     </LinearLayout>
 
