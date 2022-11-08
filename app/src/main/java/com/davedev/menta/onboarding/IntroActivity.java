@@ -1,13 +1,13 @@
 package com.davedev.menta.onboarding;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.viewpager.widget.ViewPager;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
 import com.davedev.menta.R;
 import com.davedev.menta.menu.DashboardActivity;
@@ -35,11 +35,12 @@ public class IntroActivity extends AppCompatActivity {
         btnNext = findViewById(R.id.btn_next);
         btnStart = findViewById(R.id.btn_start);
         btnAnim = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.up_move);
+        btnStart.setVisibility(View.GONE);
 
         List<ScreenItem> mList = new ArrayList<>();
-        mList.add(new ScreenItem("Title Text", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacus sem, lobortis nec semper in, vestibulum id orci.", R.raw.plants));
-        mList.add(new ScreenItem("Title Text", "Curabitur quis erat nec leo aliquet porta. Nullam rutrum, felis eu sodales tincidunt, odio erat porta mi, egestas tincidunt dui justo eget leo.", R.raw.plant_potted));
-        mList.add(new ScreenItem("Title Text", "Vestibulum nunc eros, rutrum vitae interdum nec, dictum eu lorem. Curabitur sed erat enim. Duis molestie varius nisl vel euismod.", R.raw.phone_plant));
+        mList.add(new ScreenItem("Aprende los cuidados", "Las plantas son tus mejores compañeros, necesitan los mejores cuidados, por ello te recomendamos como hacerlo de manera correcta y efectiva.", R.raw.plants));
+        mList.add(new ScreenItem("Descubre nuevas plantas", "¿Aún no sabes que planta elegir?, no te preocupes nosotros te ayudamos cuál elegir, explora entre las distintas variedades de plantas.", R.raw.plant_potted));
+        mList.add(new ScreenItem("Conoce sus características", "Cada planta es un mundo nuevo, son diferentes seres vivos y nosotros te enseñamos a que te temperatura crecen, la humedad y el tamaño que alcanzan.", R.raw.phone_plant));
 
         screenPager = findViewById(R.id.screenPager);
         introViewPagerAdapter = new IntroViewPagerAdapter(this, mList);
@@ -87,8 +88,8 @@ public class IntroActivity extends AppCompatActivity {
 
         btnNext.setVisibility(View.INVISIBLE);
         btnStart.setVisibility(View.VISIBLE);
-        tabIndicator.setVisibility(View.INVISIBLE);
-        btnStart.setAnimation(btnAnim);
+        tabIndicator.setVisibility(View.VISIBLE);
+        //btnStart.setAnimation(btnAnim);
 
     }
 }
