@@ -24,9 +24,8 @@
                 android:id="@+id/descNamePlant"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:textAlignment="center"
                 android:text="Nombre Planta"
+                android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline5"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -34,15 +33,15 @@
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/descImagePlant"
-                app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
-                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Card.Media"
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="16dp"
                 android:scaleType="centerCrop"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/descNamePlant"
+                app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Card.Media"
                 app:srcCompat="@drawable/sample" />
 
             <TextView

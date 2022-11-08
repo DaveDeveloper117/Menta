@@ -41,6 +41,7 @@
             android:contentDescription="@string/fab_content_desc"
             android:enabled="true"
             android:focusable="true"
+            app:borderWidth="26dp"
             app:elevation="0dp"
             style="@style/Widget.App.FloatingActionButton"
             app:srcCompat="@drawable/ic_menta" />

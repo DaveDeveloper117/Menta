@@ -102,11 +102,7 @@ public class LoginActivity extends AppCompatActivity {
         loginButton.setOnClickListener(view -> validateField());
     }
     @Override
-    public void onBackPressed() {
-        Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
-        startActivity(intent);
-        finish();
-    }
+    public void onBackPressed() { finish(); }
     public  void validateField(){
         String email = Objects.requireNonNull(userTextInputEditText.getText()).toString().trim();
         String password = Objects.requireNonNull(passwordTextInputEditText.getText()).toString().trim();
