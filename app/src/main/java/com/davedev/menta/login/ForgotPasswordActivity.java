@@ -1,7 +1,5 @@
 package com.davedev.menta.login;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
@@ -11,9 +9,12 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.davedev.menta.R;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
+
 import java.util.Objects;
 
 public class ForgotPasswordActivity extends AppCompatActivity {
@@ -79,7 +80,6 @@ public class ForgotPasswordActivity extends AppCompatActivity {
         String email = Objects.requireNonNull(emailTextInputEditText.getText()).toString().trim();
 
         if (email.isEmpty() || !Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            //userTextInputEditText.setError("Ingresa un correo válido");
             userTextField.setError("Ingresa un correo válido");
 
         } else {

@@ -25,53 +25,50 @@ public class ListElementPlant implements Serializable {
         this.imagePlant = imagePlant;
     }
 
-    public int getImagePlant() {return  imagePlant;}
-
-    public String getNamePlant() {
-        return namePlant;
-    }
-
     public void setNamePlant(String namePlant) {
         this.namePlant = namePlant;
     }
 
-    public String getDescriptionPlant() {
-        return descriptionPlant;
-    }
-
-    public void setDescriptionPlant(String descriptionPlant) {
-        this.descriptionPlant = descriptionPlant;
-    }
-
-    public String getSupportPlant() {
-        return supportPlant;
-    }
+    public void setDescriptionPlant(String descriptionPlant) { this.descriptionPlant = descriptionPlant; }
 
     public void setSupportPlant(String supportPlant) {
         this.supportPlant = supportPlant;
-    }
-
-    public String getHeightPlant() {
-        return heightPlant;
     }
 
     public void setHeightPlant(String heightPlant) {
         this.heightPlant = heightPlant;
     }
 
-    public String getHumidityPlant() {
-        return humidityPlant;
-    }
-
     public void setHumidityPlant(String humidityPlant) {
         this.humidityPlant = humidityPlant;
+    }
+
+    public void setTemperaturePlant(String temperaturePlant) { this.temperaturePlant = temperaturePlant; }
+
+    public int getImagePlant() {return  imagePlant;}
+
+    public String getNamePlant() {
+        return namePlant;
+    }
+
+    public String getDescriptionPlant() {
+        return descriptionPlant;
+    }
+
+    public String getSupportPlant() {
+        return supportPlant;
+    }
+
+    public String getHeightPlant() {
+        return heightPlant;
+    }
+
+    public String getHumidityPlant() {
+        return humidityPlant;
     }
 
     public String getTemperaturePlant() {
         return temperaturePlant;
     }
 
-    public void setTemperaturePlant(String temperaturePlant) {
-        this.temperaturePlant = temperaturePlant;
-    }
 }

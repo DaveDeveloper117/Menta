@@ -1,6 +1,5 @@
 package com.davedev.menta.login;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
@@ -11,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.davedev.menta.menu.DashboardActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import com.davedev.menta.R;
 import com.davedev.menta.onboarding.IntroActivity;
 import com.google.android.material.divider.MaterialDivider;

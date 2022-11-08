@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Plantas de Interior"
+        android:text="@string/plantas_de_interior"
         android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,6 +42,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleTextView"
-        app:queryHint="Buscar Plantas" />
+        app:queryHint="@string/search_hint" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

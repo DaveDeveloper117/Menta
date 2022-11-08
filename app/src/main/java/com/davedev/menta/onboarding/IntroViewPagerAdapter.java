@@ -1,5 +1,6 @@
 package com.davedev.menta.onboarding;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -29,7 +30,7 @@ public class IntroViewPagerAdapter extends PagerAdapter {
     public Object instantiateItem(@NonNull ViewGroup container, int position) {
 
         LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View layoutScreen = inflater.inflate(R.layout.layout_screen, null);
+        @SuppressLint("InflateParams") View layoutScreen = inflater.inflate(R.layout.layout_screen, null);
 
         LottieAnimationView imgSlide = layoutScreen.findViewById(R.id.intro_img);
         TextView title = layoutScreen.findViewById(R.id.intro_title);
