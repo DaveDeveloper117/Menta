@@ -26,6 +26,7 @@
     <string name="encuentra_todas_tus_flores_favoritas_y_las_m_s_llamativas">Encuentra todas tus flores favoritas y las más llamativas</string>
     <string name="ver_flores">Ver Flores</string>
     <string name="search_hint">Buscar Plantas</string>
+    <string name="ver_blog">Ver Blog</string>
 
     <style name="TextAppearance.MdcTypographyStyles.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
         <item name="fontFamily">@font/overpass</item>

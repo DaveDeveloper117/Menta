@@ -7,7 +7,7 @@
     tools:context=".menu.DashboardActivity">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/backgroundImageDashboard"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:adjustViewBounds="true"
@@ -41,7 +41,6 @@
             android:contentDescription="@string/fab_content_desc"
             android:enabled="true"
             android:focusable="true"
-            app:borderWidth="26dp"
             app:elevation="0dp"
             style="@style/Widget.App.FloatingActionButton"
             app:srcCompat="@drawable/ic_menta" />
@@ -148,15 +147,34 @@
                         android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
                         android:textColor="?android:attr/textColorSecondary" />
 
-                    <Button
-                        android:id="@+id/btnInterior"
-                        style="@style/Widget.App.Button"
-                        app:cornerRadius="8dp"
-                        android:layout_gravity="end"
-                        android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Button"
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/ver_plantas" />
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnBlogInterior"
+                            style="@style/Widget.App.Button"
+                            app:cornerRadius="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ver_blog" />
+
+                        <Button
+                            android:id="@+id/btnInterior"
+                            style="@style/Widget.App.Button"
+                            app:cornerRadius="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ver_plantas" />
+
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -231,15 +249,33 @@
                             android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
                             android:textColor="?android:attr/textColorSecondary" />
 
-                        <Button
-                            android:id="@+id/btnExterior"
-                            style="@style/Widget.App.Button"
-                            app:cornerRadius="8dp"
-                            android:layout_gravity="end"
-                            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Button"
-                            android:layout_width="wrap_content"
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/ver_plantas" />
+                            android:orientation="horizontal"
+                            android:gravity="end">
+
+                            <Button
+                                android:id="@+id/btnBlogExterior"
+                                style="@style/Widget.App.Button"
+                                app:cornerRadius="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ver_blog" />
+
+                            <Button
+                                android:id="@+id/btnExterior"
+                                style="@style/Widget.App.Button"
+                                app:cornerRadius="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ver_plantas" />
+
+                        </LinearLayout>
 
                     </LinearLayout>
 
@@ -314,15 +350,33 @@
                             android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
                             android:textColor="?android:attr/textColorSecondary" />
 
-                        <Button
-                            android:id="@+id/btnSeason"
-                            style="@style/Widget.App.Button"
-                            app:cornerRadius="8dp"
-                            android:layout_gravity="end"
-                            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Button"
-                            android:layout_width="wrap_content"
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/ver_plantas" />
+                            android:orientation="horizontal"
+                            android:gravity="end">
+
+                            <Button
+                                android:id="@+id/btnBlogSeason"
+                                style="@style/Widget.App.Button"
+                                app:cornerRadius="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ver_blog" />
+
+                            <Button
+                                android:id="@+id/btnSeason"
+                                style="@style/Widget.App.Button"
+                                app:cornerRadius="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ver_plantas" />
+
+                        </LinearLayout>
 
                     </LinearLayout>
 
@@ -397,15 +451,33 @@
                             android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
                             android:textColor="?android:attr/textColorSecondary" />
 
-                        <Button
-                            android:id="@+id/btnFlower"
-                            style="@style/Widget.App.Button"
-                            app:cornerRadius="8dp"
-                            android:layout_gravity="end"
-                            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Button"
-                            android:layout_width="wrap_content"
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/ver_flores" />
+                            android:orientation="horizontal"
+                            android:gravity="end">
+
+                            <Button
+                                android:id="@+id/btnBlogFlower"
+                                style="@style/Widget.App.Button"
+                                app:cornerRadius="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ver_flores" />
+
+                            <Button
+                                android:id="@+id/btnFlower"
+                                style="@style/Widget.App.Button"
+                                app:cornerRadius="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ver_flores" />
+
+                        </LinearLayout>
 
                     </LinearLayout>
 
