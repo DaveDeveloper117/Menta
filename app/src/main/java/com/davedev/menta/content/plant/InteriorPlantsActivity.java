@@ -1,18 +1,19 @@
-package com.davedev.menta.content;
+package com.davedev.menta.content.plant;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import android.content.Intent;
-import android.os.Bundle;
-import android.util.Log;
 
+import com.davedev.menta.R;
+import com.davedev.menta.menu.DashboardActivity;
 import com.davedev.menta.plantcards.DetailsPlantsActivity;
 import com.davedev.menta.plantcards.ListAdapterPlant;
 import com.davedev.menta.plantcards.ListElementPlant;
-import com.davedev.menta.R;
-import com.davedev.menta.menu.DashboardActivity;
 
 import java.util.ArrayList;
 import java.util.List;

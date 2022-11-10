@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Color Name: Apricot -->
-    <color name="apricot">#DCBAA7</color>
+    <color name="apricot">#ffcaad</color>
     <!-- Color Name: Antique Brass -->
     <color name="antique_brass">#CB997E</color>
     <!-- Color Name: Liver Chestnut -->
@@ -12,6 +12,6 @@
     <color name="ebony">#6B705C</color>
     <!-- Color Name: Rifle Green -->
     <color name="rifle_green">#404532</color>
-    <color name="black">#000000</color>
-    <color name="white">#FFFFFF</color>
+    <color name="black">#2b2d42</color>
+    <color name="white">#f1faee</color>
 </resources>

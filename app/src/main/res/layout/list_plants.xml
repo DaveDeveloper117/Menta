@@ -2,12 +2,12 @@
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/plantCardView"
+    style="@style/Widget.App.CardView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:animateLayoutChanges="true"
-    style="@style/Widget.App.CardView"
-    app:cardPreventCornerOverlap="false"
     app:cardElevation="4dp"
+    app:cardPreventCornerOverlap="false"
     app:cardUseCompatPadding="true">
 
     <LinearLayout
@@ -31,15 +31,14 @@
                 android:layout_gravity="center"
                 android:layout_marginStart="0dp"
                 android:layout_marginTop="0dp"
-                android:scaleType="centerCrop"
                 android:layout_marginEnd="0dp"
                 android:padding="0dp"
-                app:srcCompat="@drawable/sample"
+                android:scaleType="centerCrop"
                 app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
-                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Card.Media"/>
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Card.Media"
+                app:srcCompat="@drawable/sample" />
 
             <LinearLayout
-                android:padding="8dp"
                 android:id="@+id/linearLayoutText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -52,6 +51,7 @@
                 android:layout_marginBottom="0dp"
                 android:layout_toRightOf="@id/plantImage"
                 android:orientation="vertical"
+                android:padding="8dp"
                 android:visibility="visible">
 
                 <TextView
@@ -66,9 +66,9 @@
                     android:id="@+id/descPlant"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:visibility="gone"
                     android:text="Description"
-                    android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1" />
+                    android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1"
+                    android:visibility="gone" />
 
                 <TextView
                     android:id="@+id/supportPlant"

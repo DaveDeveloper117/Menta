@@ -13,15 +13,19 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 
 import com.davedev.menta.R;
-import com.davedev.menta.content.ExteriorPlantsActivity;
-import com.davedev.menta.content.FlowersActivity;
-import com.davedev.menta.content.InteriorPlantsActivity;
-import com.davedev.menta.content.SeasonalPlantsActivity;
+import com.davedev.menta.content.plant.ExteriorPlantsActivity;
+import com.davedev.menta.content.plant.FlowersActivity;
+import com.davedev.menta.content.plant.InteriorPlantsActivity;
+import com.davedev.menta.content.plant.SeasonalPlantsActivity;
+import com.davedev.menta.content.blog.BlogExteriorPlantsActivity;
+import com.davedev.menta.content.blog.BlogFlowersActivity;
+import com.davedev.menta.content.blog.BlogInteriorPlantsActivity;
+import com.davedev.menta.content.blog.BlogSeasonalPlantsActivity;
 import com.google.android.material.card.MaterialCardView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class DashboardActivity extends AppCompatActivity {
-    Button btnInterior, btnExterior, btnSeason, btnFlower;
+    Button btnInterior, btnExterior, btnSeason, btnFlower, btnBlogInterior, btnBlogExterior, btnBlogSeason, btnBlogFlower;
     FloatingActionButton fabLogo;
     TextView titleTextView;
     ScrollView scrollCards;
@@ -33,6 +37,10 @@ public class DashboardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
+        btnBlogInterior = findViewById(R.id.btnBlogInterior);
+        btnBlogExterior = findViewById(R.id.btnBlogExterior);
+        btnBlogSeason = findViewById(R.id.btnBlogSeason);
+        btnBlogFlower = findViewById(R.id.btnBlogFlower);
         btnInterior = findViewById(R.id.btnInterior);
         btnExterior = findViewById(R.id.btnExterior);
         btnSeason = findViewById(R.id.btnSeason);
@@ -91,8 +99,21 @@ public class DashboardActivity extends AppCompatActivity {
             finish();
         });
 
+
+        btnBlogInterior.setOnClickListener(v -> {
+            Intent intent = new Intent(DashboardActivity.this, BlogInteriorPlantsActivity.class);
+            startActivity(intent);
+            finish();
+        });
+
         btnExterior.setOnClickListener(v -> {
             Intent intent = new Intent(DashboardActivity.this, ExteriorPlantsActivity.class);
+            startActivity(intent);
+            finish();
+        });
+
+        btnBlogExterior.setOnClickListener(v -> {
+            Intent intent = new Intent(DashboardActivity.this, BlogExteriorPlantsActivity.class);
             startActivity(intent);
             finish();
         });
@@ -103,8 +124,20 @@ public class DashboardActivity extends AppCompatActivity {
             finish();
         });
 
+        btnBlogSeason.setOnClickListener(v -> {
+            Intent intent = new Intent(DashboardActivity.this, BlogSeasonalPlantsActivity.class);
+            startActivity(intent);
+            finish();
+        });
+
         btnFlower.setOnClickListener(v -> {
             Intent intent = new Intent(DashboardActivity.this, FlowersActivity.class);
+            startActivity(intent);
+            finish();
+        });
+
+        btnBlogFlower.setOnClickListener(v -> {
+            Intent intent = new Intent(DashboardActivity.this, BlogFlowersActivity.class);
             startActivity(intent);
             finish();
         });

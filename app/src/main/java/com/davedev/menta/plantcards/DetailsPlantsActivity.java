@@ -10,7 +10,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.davedev.menta.R;
-import com.davedev.menta.content.InteriorPlantsActivity;
+import com.davedev.menta.content.plant.InteriorPlantsActivity;
 
 public class DetailsPlantsActivity extends AppCompatActivity {
     TextView descNamePlant, descInfoPlant, descCarePlant, descInfoHeight, descInfoHumidity, descInfoTemperature;

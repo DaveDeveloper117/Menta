@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:animateLayoutChanges="true"
-    tools:context=".content.InteriorPlantsActivity">
+    tools:context=".content.plant.InteriorPlantsActivity">
 
     <TextView
         android:id="@+id/titleTextView"
