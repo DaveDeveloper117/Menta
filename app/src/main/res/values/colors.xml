@@ -12,6 +12,8 @@
     <color name="ebony">#6B705C</color>
     <!-- Color Name: Rifle Green -->
     <color name="rifle_green">#404532</color>
+    <!-- Color Name: Darkest Color UI -->
     <color name="black">#2b2d42</color>
+    <!-- Color Name: Whitest Color UI -->
     <color name="white">#f1faee</color>
 </resources>
