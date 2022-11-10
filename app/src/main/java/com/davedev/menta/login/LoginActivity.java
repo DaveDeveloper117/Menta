@@ -3,14 +3,15 @@ package com.davedev.menta.login;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
+import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import com.davedev.menta.R;
 import com.davedev.menta.onboarding.IntroActivity;
 import com.google.android.material.divider.MaterialDivider;
@@ -19,10 +20,9 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
 import java.util.Objects;
-import java.util.regex.Pattern;
 
 public class LoginActivity extends AppCompatActivity {
-    TextView descTextView,  titleTextView, suppTextView, newAccTextView,registerTextView, forgotPassTextView;
+    TextView descTextView,  titleTextView, suppTextView, newAccTextView,registerTextView, forgotPassTextView, errorFieldTextView;
     ImageView logoImageView, bgRightImageView, bgLeftImageView;
     TextInputLayout userTextField, passwordTextField;
     TextInputEditText userTextInputEditText, passwordTextInputEditText;
@@ -36,6 +36,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         //TextView
+        errorFieldTextView = findViewById(R.id.errorFieldTextView);
         descTextView = findViewById(R.id.descTextView);
         titleTextView = findViewById(R.id.titleTextView);
         suppTextView = findViewById(R.id.suppTextView);
@@ -87,7 +88,6 @@ public class LoginActivity extends AppCompatActivity {
         leftDivider.setAnimation(leftMove);
         rightDivider.setAnimation(rightMove);
 
-
         forgotPassTextView.setOnClickListener(view -> {
             Intent intent = new Intent(LoginActivity.this, ForgotPasswordActivity.class);
             startActivity(intent);
@@ -108,35 +108,27 @@ public class LoginActivity extends AppCompatActivity {
         String password = Objects.requireNonNull(passwordTextInputEditText.getText()).toString().trim();
 
         if (email.isEmpty() || !Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            //userTextInputEditText.setError("Ingresa un correo válido");
-            userTextField.setError("Ingresa un correo válido");
-
+            userTextInputEditText.setError(getString(R.string.errorMail));
         } else {
-            //userTextInputEditText.setError(null);
-            userTextField.setErrorEnabled(false);
-            userTextField.setError(null);
-            //startSession(email, password);
+            userTextInputEditText.setError(null);
         }
 
-        if (password.isEmpty() || password.length() < 8) {
-           // passwordTextInputEditText.setError("Mínimo 8 caracteres");
-            passwordTextField.setError("Mínimo 8 caracteres");
-        } else if (!Pattern.compile("[0-9]").matcher(password).find()) {
-            //passwordTextInputEditText.setError("Mínimo un número");
-            passwordTextField.setError("Mínimo un número");
+        if (password.isEmpty()) {
+            passwordTextField.setEndIconMode(TextInputLayout.END_ICON_NONE);
+            passwordTextInputEditText.setError(getString(R.string.errorPass));
         } else {
-            //passwordTextInputEditText.setError(null);
-            passwordTextField.setErrorEnabled(false);
-            passwordTextField.setError(null);
-            //startSession(email, password);
+            passwordTextField.setEndIconMode(TextInputLayout.END_ICON_PASSWORD_TOGGLE);
+            passwordTextInputEditText.setError(null);
         }
         startSession(email, password);
     }
 
     public void startSession(String email, String password){
         if (email.isEmpty() || password.isEmpty()){
-            Toast.makeText(LoginActivity.this, "Ocurrió un error intente nuevamente", Toast.LENGTH_SHORT).show();
+            errorFieldTextView.setVisibility(View.VISIBLE);
+            errorFieldTextView.setText(R.string.errorIntern);
         } else {
+            errorFieldTextView.setVisibility(View.GONE);
             Intent intent = new Intent(LoginActivity.this, IntroActivity.class);
             startActivity(intent);
             finish();

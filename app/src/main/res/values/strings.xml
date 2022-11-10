@@ -27,6 +27,11 @@
     <string name="ver_flores">Ver Flores</string>
     <string name="search_hint">Buscar Plantas</string>
     <string name="ver_blog">Ver Blog</string>
+    <string name="errorCaracter">Mínimo 8 caracteres</string>
+    <string name="errorNum">Mínimo un número</string>
+    <string name="errorIntern">Ocurrió un error intente nuevamente</string>
+    <string name="errorMail">Ingresa un correo válido</string>
+    <string name="errorPass">Contraseña no encontrada</string>
 
     <style name="TextAppearance.MdcTypographyStyles.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
         <item name="fontFamily">@font/overpass</item>
