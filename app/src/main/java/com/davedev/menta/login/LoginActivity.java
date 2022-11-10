@@ -114,10 +114,10 @@ public class LoginActivity extends AppCompatActivity {
         }
 
         if (password.isEmpty()) {
-            passwordTextField.setEndIconMode(TextInputLayout.END_ICON_NONE);
+            //passwordTextField.setEndIconMode(TextInputLayout.END_ICON_NONE);
             passwordTextInputEditText.setError(getString(R.string.errorPass));
         } else {
-            passwordTextField.setEndIconMode(TextInputLayout.END_ICON_PASSWORD_TOGGLE);
+            //passwordTextField.setEndIconMode(TextInputLayout.END_ICON_PASSWORD_TOGGLE);
             passwordTextInputEditText.setError(null);
         }
         startSession(email, password);
