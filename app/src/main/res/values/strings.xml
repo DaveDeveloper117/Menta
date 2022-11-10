@@ -32,6 +32,8 @@
     <string name="errorIntern">Ocurrió un error intente nuevamente</string>
     <string name="errorMail">Ingresa un correo válido</string>
     <string name="errorPass">Contraseña no encontrada</string>
+    <string name="errorName">Ingresa un nombre válido</string>
+    <string name="errorPassDiff">La contraseña no coincide</string>
 
     <style name="TextAppearance.MdcTypographyStyles.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
         <item name="fontFamily">@font/overpass</item>

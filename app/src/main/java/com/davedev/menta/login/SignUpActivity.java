@@ -94,39 +94,30 @@ public class SignUpActivity extends AppCompatActivity {
         String confirmPassword = Objects.requireNonNull(confirmPassTextInputEditText.getText()).toString().trim();
 
         if (email.isEmpty() || !Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            //userTextInputEditText.setError("Ingresa un correo válido");
-            emailTextField.setError("Ingresa un correo válido");
+            emailTextInputEditText.setError(getString(R.string.errorMail));
         } else {
-            emailTextField.setError(null);
-            emailTextField.setErrorEnabled(false);
+            emailTextInputEditText.setError(null);
         }
 
         if (name.isEmpty() || !Pattern.compile("[a-z]").matcher(name).find()) {
-            //userTextInputEditText.setError("Ingresa un correo válido");
-            userTextField.setError("Ingresa un nombre válido");
+            nameTextInputEditText.setError(getString(R.string.errorName));
 
         } else {
-            userTextField.setError(null);
-            userTextField.setErrorEnabled(false);
+            nameTextInputEditText.setError(null);
         }
 
         if (password.isEmpty() || password.length() < 8) {
-            // passwordTextInputEditText.setError("Mínimo 8 caracteres");
-            passwordTextField.setError("Mínimo 8 caracteres");
+            passTextInputEditText.setError(getString(R.string.errorCaracter));
         } else if (!Pattern.compile("[0-9]").matcher(password).find()) {
-            //passwordTextInputEditText.setError("Mínimo un número");
-            passwordTextField.setError("Mínimo un número");
+            passTextInputEditText.setError(getString(R.string.errorNum));
         } else {
-            passwordTextField.setError(null);
-            passwordTextField.setErrorEnabled(false);
+            passTextInputEditText.setError(null);
         }
 
         if (confirmPassword.isEmpty() || !confirmPassword.equals(password)) {
-            // passwordTextInputEditText.setError("Mínimo 8 caracteres");
-            repeatPasswordTextField.setError("La contraseña no coincide");
+            confirmPassTextInputEditText.setError(getString(R.string.errorPassDiff));
         } else {
-            repeatPasswordTextField.setError(null);
-            repeatPasswordTextField.setErrorEnabled(false);
+            confirmPassTextInputEditText.setError(null);
         }
         startSession(email, password);
     }
