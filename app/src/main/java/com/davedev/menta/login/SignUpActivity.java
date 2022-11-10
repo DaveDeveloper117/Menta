@@ -119,10 +119,10 @@ public class SignUpActivity extends AppCompatActivity {
         } else {
             confirmPassTextInputEditText.setError(null);
         }
-        startSession(email, password);
+        startSession(email, password, confirmPassword);
     }
-    public void startSession(String email, String password){
-        if (email.isEmpty() || password.isEmpty()){
+    public void startSession(String email, String password, String confirmPass){
+        if (email.isEmpty() || password.isEmpty() || !confirmPass.equals(password)){
             Toast.makeText(SignUpActivity.this, "Falló el registro", Toast.LENGTH_SHORT).show();
         } else {
             Intent intent = new Intent(SignUpActivity.this, IntroActivity.class);
