@@ -89,12 +89,12 @@ public class InteriorPlantsActivity extends AppCompatActivity{
                 "15cm - 30cm",
                 "40% - 60%",
                 "15°C - 25°C"));
-        elementPlants.add(new ListElementPlant((R.drawable.peperomia_incana_min), "Pimiento Fieltro (Peperomia Incana)",
-                "Es una planta compacta en altura y envergadura, con cuidados sencillos, lo que la hace una planta de interior ideal. Sus hojas tienen forma de corazón y son de un color verde pálido. Quizá no es la Peperomia más atractiva de la familia, pero es ideal para principiantes.",
-                "La Peperomia polybotrya necesita bastante luz indirecta aunque tolera bien la falta de luz. Cuidado con la luz directa del sol porque quema sus hojas.",
-                "15cm - 30cm",
-                "40% - 60%",
-                "15°C - 25°C"));
+        elementPlants.add(new ListElementPlant((R.drawable.monstera_adansonii_min), "Piña Anona (Monstera Adansonii)",
+                "La monstera adansonii es una planta nativa de América del sur, América central y en las Islas del Caribe.Es una de las plantas más \"pequeñas\" de la familia, aunque puede llegar a los 3 metros de alto en buenas condiciones.",
+                "La monstera adansonii prefiere la luz indirecta. Nunca la pongas bajo el sol directo, ya que las hojas se queman y la planta acaba muriendo.",
+                "20cm - 30cm",
+                "50% - 90%",
+                "15°C - 20°C"));
 
         listAdapterPlant = new ListAdapterPlant(elementPlants, this, this::moveToDescription);
 
