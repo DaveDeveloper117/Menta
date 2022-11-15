@@ -89,6 +89,12 @@ public class InteriorPlantsActivity extends AppCompatActivity{
                 "15cm - 30cm",
                 "40% - 60%",
                 "15°C - 25°C"));
+        elementPlants.add(new ListElementPlant((R.drawable.peperomia_incana_min), "Pimiento Fieltro (Peperomia Incana)",
+                "Es una planta compacta en altura y envergadura, con cuidados sencillos, lo que la hace una planta de interior ideal. Sus hojas tienen forma de corazón y son de un color verde pálido. Quizá no es la Peperomia más atractiva de la familia, pero es ideal para principiantes.",
+                "La Peperomia polybotrya necesita bastante luz indirecta aunque tolera bien la falta de luz. Cuidado con la luz directa del sol porque quema sus hojas.",
+                "15cm - 30cm",
+                "40% - 60%",
+                "15°C - 25°C"));
 
         listAdapterPlant = new ListAdapterPlant(elementPlants, this, this::moveToDescription);
 
