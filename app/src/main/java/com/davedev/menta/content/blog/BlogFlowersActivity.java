@@ -1,10 +1,12 @@
 package com.davedev.menta.content.blog;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.davedev.menta.R;
+import com.davedev.menta.menu.DashboardActivity;
 
 public class BlogFlowersActivity extends AppCompatActivity {
 
@@ -12,5 +14,11 @@ public class BlogFlowersActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_blog_flowers);
+    }
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(BlogFlowersActivity.this, DashboardActivity.class);
+        startActivity(intent);
+        finish();
     }
 }
