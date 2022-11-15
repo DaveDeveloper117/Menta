@@ -11,6 +11,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:adjustViewBounds="true"
+        android:contentDescription="@string/content_description_media"
         android:cropToPadding="true"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -18,7 +19,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/bg_dash"
-        android:contentDescription="@string/content_description_media" />
+        tools:ignore="ImageContrastCheck" />
 
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -33,6 +34,7 @@
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fabLogo"
+            style="@style/Widget.App.FloatingActionButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center|center_vertical"
@@ -42,8 +44,8 @@
             android:enabled="true"
             android:focusable="true"
             app:elevation="0dp"
-            style="@style/Widget.App.FloatingActionButton"
-            app:srcCompat="@drawable/ic_menta" />
+            app:srcCompat="@drawable/ic_menta"
+            tools:ignore="DuplicateSpeakableTextCheck,ImageContrastCheck" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
@@ -102,24 +104,26 @@
 
                         <com.google.android.material.floatingactionbutton.FloatingActionButton
                             android:id="@+id/fabInterior"
+                            style="@style/Widget.App.FloatingActionButton"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            app:fabSize="mini"
-                            style="@style/Widget.App.FloatingActionButton"
-                            app:elevation="0dp"
-                            app:borderWidth="0dp"
                             android:clickable="false"
-                            android:focusable="false"
                             android:contentDescription="@string/fab_content_desc"
-                            app:srcCompat="@drawable/ic_potted_plant_24"/>
+                            android:focusable="false"
+                            app:borderWidth="0dp"
+                            app:elevation="0dp"
+                            app:fabSize="mini"
+                            app:srcCompat="@drawable/ic_potted_plant_24"
+                            tools:ignore="ImageContrastCheck" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="8dp"
                             android:layout_gravity="center_vertical"
+                            android:layout_marginStart="8dp"
                             android:text="@string/plantas_de_interior"
-                            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline6" />
+                            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline6"
+                            tools:ignore="TextContrastCheck" />
 
 
                     </LinearLayout>
@@ -145,7 +149,8 @@
                         android:layout_height="wrap_content"
                         android:text="@string/conoce_la_variedad_de_plantas_que_puedes_tener_dentro_en_casa"
                         android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
-                        android:textColor="?android:attr/textColorSecondary" />
+                        android:textColor="?android:attr/textColorSecondary"
+                        tools:ignore="TextContrastCheck" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -156,22 +161,24 @@
                         <Button
                             android:id="@+id/btnBlogInterior"
                             style="@style/Widget.App.Button"
-                            app:cornerRadius="8dp"
-                            android:layout_marginEnd="8dp"
-                            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Button"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/ver_blog" />
+                            android:layout_marginEnd="8dp"
+                            android:text="@string/ver_blog"
+                            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Button"
+                            app:cornerRadius="8dp"
+                            tools:ignore="TextContrastCheck" />
 
                         <Button
                             android:id="@+id/btnInterior"
                             style="@style/Widget.App.Button"
-                            app:cornerRadius="8dp"
-                            android:layout_marginEnd="8dp"
-                            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Button"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/ver_plantas" />
+                            android:layout_marginEnd="8dp"
+                            android:text="@string/ver_plantas"
+                            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Button"
+                            app:cornerRadius="8dp"
+                            tools:ignore="TextContrastCheck" />
 
 
                     </LinearLayout>
@@ -208,21 +215,23 @@
                             style="@style/Widget.App.FloatingActionButton"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            app:fabSize="mini"
-                            app:elevation="0dp"
-                            app:borderWidth="0dp"
                             android:clickable="false"
-                            android:focusable="false"
                             android:contentDescription="@string/fab_content_desc"
-                            app:srcCompat="@drawable/ic_grass_24"/>
+                            android:focusable="false"
+                            app:borderWidth="0dp"
+                            app:elevation="0dp"
+                            app:fabSize="mini"
+                            app:srcCompat="@drawable/ic_grass_24"
+                            tools:ignore="ImageContrastCheck" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="8dp"
                             android:layout_gravity="center_vertical"
+                            android:layout_marginStart="8dp"
                             android:text="@string/plantas_de_exterior"
-                            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline6" />
+                            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline6"
+                            tools:ignore="TextContrastCheck" />
 
                     </LinearLayout>
 

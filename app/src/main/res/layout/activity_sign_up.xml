@@ -12,6 +12,7 @@
         android:layout_height="0dp"
         android:adjustViewBounds="true"
         android:alpha="0.3"
+        android:contentDescription="@string/backgroundImage1"
         android:cropToPadding="true"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -19,7 +20,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/bg_signup"
-        android:contentDescription="@string/backgroundImage1" />
+        tools:ignore="ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/bgLeftImageView"
@@ -39,6 +40,7 @@
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:adjustViewBounds="true"
+        android:contentDescription="@string/backgroundImage2"
         android:cropToPadding="true"
         android:rotation="180"
         android:rotationY="180"
@@ -46,7 +48,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/plant_top_right"
-        android:contentDescription="@string/backgroundImage2" />
+        tools:ignore="ImageContrastCheck" />
 
 
     <ImageView
@@ -57,12 +59,13 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="150dp"
         android:adjustViewBounds="true"
+        android:contentDescription="@string/logoImage"
         android:cropToPadding="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_menta"
-        android:contentDescription="@string/logoImage" />
+        tools:ignore="ImageContrastCheck" />
 
     <TextView
         android:id="@+id/descTextView"
@@ -111,7 +114,8 @@
             android:id="@+id/nameTextInputEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            tools:ignore="TextContrastCheck" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -170,7 +174,8 @@
             android:id="@+id/passTextInputEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            tools:ignore="TextContrastCheck" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -206,17 +211,17 @@
 
     <Button
         android:id="@+id/loginButton"
-        android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Button"
+        style="@style/Widget.App.Button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Registrarse"
-        style="@style/Widget.App.Button"
+        android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Button"
         app:cornerRadius="16dp"
         app:layout_constraintEnd_toEndOf="@+id/passwordTextField"
         app:layout_constraintStart_toStartOf="@+id/passwordTextField"
         app:layout_constraintTop_toBottomOf="@+id/repeatPasswordTextField"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText,TextContrastCheck" />
 
     <TextView
         android:id="@+id/newAccTextView"
