@@ -21,4 +21,5 @@ public class BlogExteriorPlantsActivity extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+    //unos besos en la cola o que
 }
