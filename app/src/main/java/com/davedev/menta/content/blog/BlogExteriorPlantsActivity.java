@@ -7,13 +7,20 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.davedev.menta.R;
 import com.davedev.menta.menu.DashboardActivity;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class BlogExteriorPlantsActivity extends AppCompatActivity {
+
+    FloatingActionButton fabBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_blog_exterior_plants);
+
+        fabBack = findViewById(R.id.fabBack);
+        fabBack.setOnClickListener(v -> onBackPressed());
+
     }
     @Override
     public void onBackPressed() {
@@ -21,5 +28,4 @@ public class BlogExteriorPlantsActivity extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
-    //unos besos en la cola o que
 }

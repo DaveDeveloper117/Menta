@@ -95,6 +95,7 @@
                         android:layout_margin="16dp"
                         android:clickable="false"
                         android:focusable="false"
+                        app:fabSize="mini"
                         app:srcCompat="@drawable/ic_baseline_height_24" />
 
                     <TextView
@@ -130,6 +131,7 @@
                         android:layout_margin="16dp"
                         android:clickable="false"
                         android:focusable="false"
+                        app:fabSize="mini"
                         style="@style/Widget.App.FloatingActionButton"
                         app:srcCompat="@drawable/ic_baseline_opacity_24" />
 
@@ -166,6 +168,7 @@
                         android:layout_margin="16dp"
                         android:clickable="false"
                         android:focusable="false"
+                        app:fabSize="mini"
                         style="@style/Widget.App.FloatingActionButton"
                         app:srcCompat="@drawable/ic_baseline_device_thermostat_24" />
 
