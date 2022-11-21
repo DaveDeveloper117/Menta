@@ -47,7 +47,7 @@ public class ListAdapterPlant extends RecyclerView.Adapter<ListAdapterPlant.View
 
     @Override
     public void onBindViewHolder(final ListAdapterPlant.ViewHolder holder, final int position){
-        holder.plantCardView.setAnimation(AnimationUtils.loadAnimation(context, R.anim.fade_in));
+        holder.plantCardView.setAnimation(AnimationUtils.loadAnimation(context, R.anim.fade_start_transition));
         holder.bindData(mData.get(position));
     }
 
