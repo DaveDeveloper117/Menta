@@ -9,9 +9,9 @@
     <string name="backgroundImage1">bgImage1</string>
     <string name="backgroundImage2">bgImage2</string>
     <string name="content_description_media">sample</string>
-    <string name="title">Título</string>
-    <string name="secondary_text">Subtítulo</string>
-    <string name="supporting_text">Lorem ipsum dolor sit amet.</string>
+    <string name="title">"Morbi iaculis odio sit amet eros commodo maximus."</string>
+    <string name="secondary_text">Duis nec leo ac ligula blandit pretium eu ut tellus.</string>
+    <string name="supporting_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo lacus quis ligula fringilla consectetur. Curabitur et justo nulla. Nam ac ullamcorper odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed ultricies posuere sem condimentum ornare. Morbi facilisis sit amet ligula id aliquet. In rutrum eleifend mi nec laoreet. Morbi dapibus eros et velit tempor tempor. Fusce congue, libero non finibus dictum, leo odio pulvinar magna, id euismod justo augue vitae ligula.</string>
     <string name="action_1">Acción 1</string>
     <string name="action_2">Acción 2</string>
     <string name="encontremos_tus_plantas_preferidas">Encontremos tus plantas preferidas!</string>

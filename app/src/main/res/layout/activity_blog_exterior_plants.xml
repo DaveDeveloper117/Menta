@@ -6,4 +6,150 @@
     android:layout_height="match_parent"
     tools:context=".content.blog.BlogExteriorPlantsActivity">
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabBack"
+        style="@style/Widget.App.FloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center"
+        android:layout_margin="8dp"
+        android:clickable="false"
+        android:focusable="false"
+        app:fabSize="mini"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_round_arrow_back_24"
+        android:contentDescription="@string/fab_content_desc" />
+
+    <ScrollView
+        android:id="@+id/scrollBlog"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:orientation="vertical"
+        android:scrollbarSize="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/descImagePlant"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Card.Media"
+                app:srcCompat="@drawable/sample" />
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Todo sobre las plantas de exterior"
+                android:padding="8dp"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline4"/>
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:id="@+id/coordinatorLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Main content -->
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fabUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:layout_margin="8dp"
+                    android:clickable="false"
+                    android:contentDescription="@string/fab_content_desc"
+                    android:enabled="true"
+                    android:focusable="false"
+                    app:fabSize="mini"
+                    app:elevation="0dp"
+                    app:srcCompat="@drawable/ic_round_person_24"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginStart="64dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Articulo por Marco Antonio Malagon Perdomo"
+                    android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Caption" />
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cuidado de plantas de exterior"
+                android:padding="8dp"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline5"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Por lógica, todas las plantas son de exterior, solo que con el tiempo hemos adaptado algunas para que vivan dentro de nuestros hogares. Esto quiere decir que el reino de las plantas es tan diverso que es imposible hacer una guía para cuidar plantas de exterior que funcione para todas, pero sí unos lineamientos básicos con los que puedes guiarte para cuidar de tu jardín al aire libre:"
+                android:padding="8dp"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Luz: Algunas necesitan sol directo, mientras que otras deben mantenerse a la sombra. Este es, tal vez, el factor más importante al momento de cuidar de tus plantas de exterior. "
+                android:padding="8dp"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Card.Media"
+                app:srcCompat="@drawable/img" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cómo dependerá completamente de la especie de planta que tengas, asegúrate de investigar sobre tu planta y sus requerimientos.\n\Si no estás seguro sobre la cantidad de luz que necesita tu planta de exterior, ubícala en un lugar donde reciba entre 6 a 8 horas de luz diaria. Será la misma planta y su crecimiento los que te indiquen si estás haciendo lo correcto o necesitas hacer algún ajuste."
+                android:padding="8dp"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Agua: en general, las plantas de exterior tienden a ser más fuertes y resistir más calor que las de interior; por lo tanto, necesitan ser regadas con más frecuencia."
+                android:padding="8dp"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Puedes instalar un sistema automático de riego para evitar la tarea de regar una por una a diario.\n\Por regla general, las plantas pequeñas necesitan riego diario, mientras que los arbustos y árboles pueden regarse una vez a la semana.\n\El clima de tu ciudad influirá directamente en tu rutina de riego. Si llueve a diario, puedes olvidarte del riego por completo. Intenta ajustar la frecuencia con la que riegas tu jardín a la temperatura y lluvias de la época: mientras más caliente y seco esté el clima, más agua necesitarán."
+                android:padding="8dp"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
