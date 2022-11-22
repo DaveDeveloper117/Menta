@@ -108,14 +108,17 @@ public class SignUpActivity extends AppCompatActivity {
 
         if (password.isEmpty() || password.length() < 8) {
             passTextInputEditText.setError(getString(R.string.errorCaracter));
+            return;
         } else if (!Pattern.compile("[0-9]").matcher(password).find()) {
             passTextInputEditText.setError(getString(R.string.errorNum));
+            return;
         } else {
             passTextInputEditText.setError(null);
         }
 
         if (confirmPassword.isEmpty() || !confirmPassword.equals(password)) {
             confirmPassTextInputEditText.setError(getString(R.string.errorPassDiff));
+            return;
         } else {
             confirmPassTextInputEditText.setError(null);
         }

@@ -88,6 +88,12 @@ public class ExteriorPlantsActivity extends AppCompatActivity {
                 "0cm",
                 "0%",
                 "0°C"));
+        elementPlants.add(new ListElementPlant((R.drawable.sample), "Seasonal Name Plant",
+                "Seasonal Plant Description",
+                "Seasonal Plant Indications",
+                "0cm",
+                "0%",
+                "0°C"));
 
 
         listAdapterPlant = new ListAdapterPlant(elementPlants, this, this::moveToDescription);

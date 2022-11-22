@@ -1,6 +1,7 @@
 package com.davedev.menta.login;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
@@ -114,10 +115,8 @@ public class LoginActivity extends AppCompatActivity {
         }
 
         if (password.isEmpty()) {
-            //passwordTextField.setEndIconMode(TextInputLayout.END_ICON_NONE);
             passwordTextInputEditText.setError(getString(R.string.errorPass));
         } else {
-            //passwordTextField.setEndIconMode(TextInputLayout.END_ICON_PASSWORD_TOGGLE);
             passwordTextInputEditText.setError(null);
         }
         startSession(email, password);
