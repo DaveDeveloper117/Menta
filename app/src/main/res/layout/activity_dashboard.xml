@@ -474,7 +474,7 @@
                                 android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Button"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/ver_flores" />
+                                android:text="@string/ver_blog" />
 
                             <Button
                                 android:id="@+id/btnFlower"

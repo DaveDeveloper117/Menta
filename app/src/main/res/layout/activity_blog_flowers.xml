@@ -47,15 +47,15 @@
                 android:scaleType="centerCrop"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/bg_blog_exterior" />
+                app:srcCompat="@drawable/bg_blog_flores" />
 
             <TextView
                 android:id="@+id/titleTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Todo sobre las plantas de exterior"
                 android:padding="8dp"
-                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline4"/>
+                android:text="Cómo cuidar las flores de tu hogar"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline4" />
 
             <androidx.coordinatorlayout.widget.CoordinatorLayout
                 android:id="@+id/coordinatorLayout"
@@ -74,14 +74,14 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
                     app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Card.Media"
-                    app:srcCompat="@drawable/blog_marco" />
+                    app:srcCompat="@drawable/blog_danna" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="start|center_vertical"
                     android:layout_marginStart="64dp"
-                    android:text="Artículo por Marco Antonio Malagon Perdomo"
+                    android:text="Artículo por Danna Ikram Reyna Contreras"
                     android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Caption" />
 
             </androidx.coordinatorlayout.widget.CoordinatorLayout>
@@ -89,14 +89,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cuidado de plantas de exterior"
+                android:text="Avivan el ambiente y, en ocasiones, le dan un aroma muy especial a tu casa."
                 android:padding="8dp"
                 android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline5"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Por lógica, todas las plantas son de exterior, solo que con el tiempo hemos adaptado algunas para que vivan dentro de nuestros hogares.\n\nEsto quiere decir que el reino de las plantas es tan diverso que es imposible hacer una guía para cuidar plantas de exterior que funcione para todas, pero sí unos lineamientos básicos con los que puedes guiarte para cuidar de tu jardín al aire libre:"
+                android:text="Las flores son elementos que dentro de los ambientes urbanos aportan mucha frescura y vitalidad en la decoración del hogar. Estas pueden desempeñar el papel protagonista en la decoración del hogar, la combinación de sus colores, formas y texturas consiguen ambientes cálidos y serenos o frescos y relajantes.\nSin embargo, estas exigen una atención constante y unos cuidados diarios, pues son muy delicadas."
                 android:padding="8dp"
                 android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1"/>
 
@@ -104,7 +104,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="Luz: Algunas necesitan sol directo, mientras que otras deben mantenerse a la sombra. Este es, tal vez, el factor más importante al momento de cuidar de tus plantas de exterior. "
+                android:text="Para que las plantas reciban el aporte de luz vital es necesario conocer la orientación de la casa."
                 android:padding="8dp"
                 android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"/>
 
@@ -119,27 +119,27 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
                 app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Card.Media"
-                app:srcCompat="@drawable/img_blog_exterior_0" />
+                app:srcCompat="@drawable/img_blog_flores_0" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="8dp"
-                android:text="Cómo dependerá completamente de la especie de planta que tengas, asegúrate de investigar sobre tu planta y sus requerimientos.\n\nSi no estás seguro sobre la cantidad de luz que necesita tu planta de exterior, ubícala en un lugar donde reciba entre 6 a 8 horas de luz diaria. Será la misma planta y su crecimiento los que te indiquen si estás haciendo lo correcto o necesitas hacer algún ajuste."
+                android:text="Si se trata de flores que se encuentran en vasija o jarrón será necesario vigilar el estado del agua, pues si se corrompe afectará a las planta que contenga.\nPara ello, hay que cambiarla cada dos días y cortar los tallos unos dos centímetros. Asimismo, es recomendable añadir conservantes o un poco de azúcar para que estas reciban todos los nutrientes y se mantengan frescas durante más tiempo."
                 android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="Agua: en general, las plantas de exterior tienden a ser más fuertes y resistir más calor que las de interior; por lo tanto, necesitan ser regadas con más frecuencia."
+                android:text="Otro aspecto importante es la poda, si no se eliminan las hojas y ramas secas, las plantas no podrán respirar bien y se morirán. Además, con una buena limpieza a tiempo, la planta podrá reflorecer y estas saldrán con mayor fuerza."
                 android:padding="8dp"
                 android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Puedes instalar un sistema automático de riego para evitar la tarea de regar una por una a diario.\n\nPor regla general, las plantas pequeñas necesitan riego diario, mientras que los arbustos y árboles pueden regarse una vez a la semana.\n\nEl clima de tu ciudad influirá directamente en tu rutina de riego. Si llueve a diario, puedes olvidarte del riego por completo. Intenta ajustar la frecuencia con la que riegas tu jardín a la temperatura y lluvias de la época mientras más caliente y seco esté el clima, más agua necesitarán."
+                android:text="En el momento de determinar la ubicación en el hogar, es importante tener en cuenta la orientación y reconocer qué zonas reciben más luz y cuáles son más sombrías.\n\nAdemás, es fundamental que las flores, que se encuentran en interior, se sitúen en una zona en la que se reciba aire fresco sin estar expuesta a una corriente directa o al aire acondicionado, pues de lo contrario, su crecimiento podría ralentizarse e, incluso, acabarán por apagarse."
                 android:padding="8dp"
                 android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1"/>
 
@@ -154,59 +154,14 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
                 app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Card.Media"
-                app:srcCompat="@drawable/img_blog_exterior_1" />
+                app:srcCompat="@drawable/img_blog_flores_1" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:text="Abono/fertilizante: para asegurarte de que las plantas de tu jardín están recibiendo los nutrientes necesarios, puedes crear tu propia rutina de fertilización o abono."
-                android:padding="8dp"
-                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Una fácil y además ecológica manera es separar tu basura en orgánica e inorgánica. La orgánica, que puede estar formada por restos de comida y otros desechos naturales, es un excelente abono para todo tipo de plantas. "
+                android:text="Ya estén situadas en el exterior o en el interior de la casa, es importante vigilar el abono de la planta.\nEste debe cambiarse unas dos veces al año, asimismo es aconsejable utilizar un fertilizante que contenga todos los aportes necesarios para una planta en flor, como nitrógeno para activar el crecimiento; fósforo, que favorece la floración y potasio, que reafirma el tejido y evita que la planta se marchite.\n\nEn el caso de las plantas con flor, la vitamina B1 es importante para intensificar los colores naturales."
                 android:padding="8dp"
                 android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:text="Podar plantas de exterior: la poda de las plantas de exterior es más trabajosa que la de las plantas de interior. Afuera, son víctimas de malas hierbas y siempre es necesario mantenerlas libres de estas, por salud y cuestiones estéticas."
-                android:padding="8dp"
-                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Saca toda la maleza desde su raíz y revisa siempre que no esté creciendo de nuevo. Estas plantas se alimentan de los nutrientes que bien podría estar aprovechando nuestra planta de exterior.\n\nEs importante recortar hojas y flores muertas y también puedes cortar áreas sanas de tu planta si sientes que está creciendo demasiado o ha perdido su forma."
-                android:padding="8dp"
-                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Decoración con plantas de exterior"
-                android:padding="8dp"
-                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline5"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="¿Tienes un espacio para decorar con plantas de exterior y no sabes cómo hacerlo? Estas ideas son fáciles de ejecutar y le darán un toque llamativo a tu espacio:"
-                android:padding="8dp"
-                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:text="Dedica un rincón de tu patio o jardín para plantas ornamentales: cualquier planta puede ser ornamental si sabes cómo usarla. Puedes poner las más esbeltas al fondo y las pequeñas en el frente.\n\nIlumina tus plantas: busca alguna planta que quieras hacer el centro de atención en tu jardín y enfoca la luz en ella. La iluminación empotrada, justo al nivel de las plantas, le dará un toque moderno a tu espacio."
-                android:padding="8dp"
-                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"/>
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:layout_width="wrap_content"
@@ -219,15 +174,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
                 app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Card.Media"
-                app:srcCompat="@drawable/img_blog_exterior_2" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="¿Tienes una pared libre en el exterior de tu casa o terraza? ¡Atrévete a cubrirla con una planta de pared! Las trepadoras y enredaderas se usan mucho en este tipo de diseños, para convertir una pared aburrida en un oasis dentro del jardín.\n\nSi buscas privacidad, una pared de arbustos puede hacer el trabajo. Hay muchos tipos de arbustos, incluso son flores, que puedes usar para crear una barrera entre tu casa y el exterior."
-                android:padding="8dp"
-                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1"/>
-
+                app:srcCompat="@drawable/img_blog_flores_2"/>
 
         </LinearLayout>
 

@@ -3,6 +3,7 @@ package com.davedev.menta.plantcards;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
@@ -11,12 +12,14 @@ import android.widget.TextView;
 
 import com.davedev.menta.R;
 import com.davedev.menta.content.plant.InteriorPlantsActivity;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class DetailsPlantsActivity extends AppCompatActivity {
-    TextView descNamePlant, descInfoPlant, descCarePlant, descInfoHeight, descInfoHumidity, descInfoTemperature;
+    TextView descNamePlant, descInfoPlant, descCarePlant, descInfoHeight, descInfoHumidity, descInfoTemperature, titleHeight, titleHumidity, titleTemperature;
     ImageView descImagePlant;
     LinearLayout linearLayoutFabs;
     Animation downMove, upMove, leftMove, rightMove;
+    FloatingActionButton fabHeight, fabHumidity, fabTemperature;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +28,12 @@ public class DetailsPlantsActivity extends AppCompatActivity {
 
         ListElementPlant elementPlant = (ListElementPlant) getIntent().getSerializableExtra("ListElement");
 
+        fabHeight = findViewById(R.id.fabHeight);
+        fabHumidity = findViewById(R.id.fabHumidity);
+        fabTemperature = findViewById(R.id.fabTemperature);
+        titleHeight = findViewById(R.id.titleHeight);
+        titleHumidity = findViewById(R.id.titleHumidity);
+        titleTemperature = findViewById(R.id.titleTemperature);
         descNamePlant = findViewById(R.id.descNamePlant);
         descInfoPlant = findViewById(R.id.descInfoPlant);
         descCarePlant = findViewById(R.id.descCarePlant);
@@ -52,6 +61,21 @@ public class DetailsPlantsActivity extends AppCompatActivity {
         descInfoHumidity.setText(elementPlant.getHumidityPlant());
         descInfoTemperature.setText(elementPlant.getTemperaturePlant());
         descImagePlant.setImageResource(elementPlant.getImagePlant());
+
+        fabHeight.setOnClickListener(v -> {
+            titleHeight.setVisibility(View.VISIBLE);
+            descInfoHeight.setVisibility(View.VISIBLE);
+        });
+
+        fabHumidity.setOnClickListener(v -> {
+            titleHumidity.setVisibility(View.VISIBLE);
+            descInfoHumidity.setVisibility(View.VISIBLE);
+        });
+
+        fabTemperature.setOnClickListener(v -> {
+            titleTemperature.setVisibility(View.VISIBLE);
+            descInfoTemperature.setVisibility(View.VISIBLE);
+        });
     }
     @Override
     public void onBackPressed() {
