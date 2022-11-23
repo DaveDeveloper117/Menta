@@ -57,7 +57,7 @@ public class DetailsPlantsActivity extends AppCompatActivity {
 
         descNamePlant.setText(elementPlant.getNamePlant());
         descInfoPlant.setText(elementPlant.getDescriptionPlant());
-        descCarePlant.setText(elementPlant.getSupportPlant());
+        descCarePlant.setText(elementPlant.getCaresPlant());
         descInfoHeight.setText(elementPlant.getHeightPlant());
         descInfoHumidity.setText(elementPlant.getHumidityPlant());
         descInfoTemperature.setText(elementPlant.getTemperaturePlant());

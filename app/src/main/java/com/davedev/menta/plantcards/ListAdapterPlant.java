@@ -75,7 +75,7 @@ public class ListAdapterPlant extends RecyclerView.Adapter<ListAdapterPlant.View
             plantImageView.setImageResource(item.getImagePlant());
             titlePlant.setText(item.getNamePlant());
             descPlant.setText(item.getDescriptionPlant());
-            carePlant.setText(item.getSupportPlant());
+            carePlant.setText(item.getCaresPlant());
             heightPlant.setText(item.getHeightPlant());
             humidityPlant.setText(item.getHumidityPlant());
             tempPlant.setText(item.getTemperaturePlant());
