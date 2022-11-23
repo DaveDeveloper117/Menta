@@ -95,6 +95,37 @@ public class SeasonalPlantsActivity extends AppCompatActivity {
                 "40%",
                 "14°C - 18°C"));
 
+        elementPlants.add(new ListElementPlant((R.drawable.hortensiadeinvierno_min), "Hortensia de invierno ()",
+                "Las prímulas, también conocidas como primaveras o primaveras de jardín, es un género de plantas de la familia de las primuláceas. Es una planta perenne de crecimiento bajo con alrededor de 500 especies. Muchas de las especies de este género se dan espontáneamente en todo el hemisferio norte.",
+                "Las prímulas se deben colocar en una zona fresca y luminosa, evitando la luz directa del sol. No soporta las altas temperaturas y, aunque tolera el frío, es muy susceptible a las heladas. Se multiplica por semillas y para su plantación se recomienda un sustrato bien aireado y rico en materia orgánica.",
+                "20cm - 40cm",
+                "40%",
+                "14°C - 18°C"));
+        elementPlants.add(new ListElementPlant((R.drawable.prímula_min), "Prímula (Primula)",
+                "Las prímulas, también conocidas como primaveras o primaveras de jardín, es un género de plantas de la familia de las primuláceas. Es una planta perenne de crecimiento bajo con alrededor de 500 especies. Muchas de las especies de este género se dan espontáneamente en todo el hemisferio norte.",
+                "Las prímulas se deben colocar en una zona fresca y luminosa, evitando la luz directa del sol. No soporta las altas temperaturas y, aunque tolera el frío, es muy susceptible a las heladas. Se multiplica por semillas y para su plantación se recomienda un sustrato bien aireado y rico en materia orgánica.",
+                "20cm - 40cm",
+                "40%",
+                "14°C - 18°C"));
+        elementPlants.add(new ListElementPlant((R.drawable.prímula_min), "Prímula (Primula)",
+                "Las prímulas, también conocidas como primaveras o primaveras de jardín, es un género de plantas de la familia de las primuláceas. Es una planta perenne de crecimiento bajo con alrededor de 500 especies. Muchas de las especies de este género se dan espontáneamente en todo el hemisferio norte.",
+                "Las prímulas se deben colocar en una zona fresca y luminosa, evitando la luz directa del sol. No soporta las altas temperaturas y, aunque tolera el frío, es muy susceptible a las heladas. Se multiplica por semillas y para su plantación se recomienda un sustrato bien aireado y rico en materia orgánica.",
+                "20cm - 40cm",
+                "40%",
+                "14°C - 18°C"));
+        elementPlants.add(new ListElementPlant((R.drawable.prímula_min), "Prímula (Primula)",
+                "Las prímulas, también conocidas como primaveras o primaveras de jardín, es un género de plantas de la familia de las primuláceas. Es una planta perenne de crecimiento bajo con alrededor de 500 especies. Muchas de las especies de este género se dan espontáneamente en todo el hemisferio norte.",
+                "Las prímulas se deben colocar en una zona fresca y luminosa, evitando la luz directa del sol. No soporta las altas temperaturas y, aunque tolera el frío, es muy susceptible a las heladas. Se multiplica por semillas y para su plantación se recomienda un sustrato bien aireado y rico en materia orgánica.",
+                "20cm - 40cm",
+                "40%",
+                "14°C - 18°C"));
+        elementPlants.add(new ListElementPlant((R.drawable.prímula_min), "Prímula (Primula)",
+                "Las prímulas, también conocidas como primaveras o primaveras de jardín, es un género de plantas de la familia de las primuláceas. Es una planta perenne de crecimiento bajo con alrededor de 500 especies. Muchas de las especies de este género se dan espontáneamente en todo el hemisferio norte.",
+                "Las prímulas se deben colocar en una zona fresca y luminosa, evitando la luz directa del sol. No soporta las altas temperaturas y, aunque tolera el frío, es muy susceptible a las heladas. Se multiplica por semillas y para su plantación se recomienda un sustrato bien aireado y rico en materia orgánica.",
+                "20cm - 40cm",
+                "40%",
+                "14°C - 18°C"));
+
 
         listAdapterPlant = new ListAdapterPlant(elementPlants, this, this::moveToDescription);
 
