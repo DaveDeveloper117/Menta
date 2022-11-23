@@ -88,8 +88,8 @@ public class SeasonalPlantsActivity extends AppCompatActivity {
                 "12cm  60cm",
                 "35%",
                 "20°C - 22°C"));
-        elementPlants.add(new ListElementPlant((R.drawable.prímula_min), "Prímula (Primula)",
-                "Las prímulas, también conocidas como primaveras o primaveras de jardín, es un género de plantas de la familia de las primuláceas. Es una planta perenne de crecimiento bajo con alrededor de 500 especies. Muchas de las especies de este género se dan espontáneamente en todo el hemisferio norte.",
+        elementPlants.add(new ListElementPlant((R.drawable.primula_min), "Prímula (Primula)",
+                "Las prímulas, también conocidas cmula_omo primaveras o primaveras de jardín, es un género de plantas de la familia de las primuláceas. Es una planta perenne de crecimiento bajo con alrededor de 500 especies. Muchas de las especies de este género se dan espontáneamente en todo el hemisferio norte.",
                 "Las prímulas se deben colocar en una zona fresca y luminosa, evitando la luz directa del sol. No soporta las altas temperaturas y, aunque tolera el frío, es muy susceptible a las heladas. Se multiplica por semillas y para su plantación se recomienda un sustrato bien aireado y rico en materia orgánica.",
                 "20cm - 40cm",
                 "40%",
@@ -112,7 +112,7 @@ public class SeasonalPlantsActivity extends AppCompatActivity {
                 "1cm - 20cm",
                 "60%",
                 "13°C - 18°C"));
-        elementPlants.add(new ListElementPlant((R.drawable.membrillero_japonés_min), "Membrillero japonés (Chaenomeles japonica)",
+        elementPlants.add(new ListElementPlant((R.drawable.membrillero_japones_min), "Membrillero japonés (Chaenomeles japonica)",
                 "Chaenomeles japonica es una especie de plantas del género Chaenomeles, familia de las rosáceas. Es nativa del este asiático.",
                 "Regar moderadamente todo el año (2 riegos por semana) aumentando un poco el aporte de agua en verano si hace mucho calor. La poda es muy importante y se lleva a cabo tras la floración cortando las ramas sobre la segunda yema a partir de la rama principal.",
                 "20cm - 3m",
