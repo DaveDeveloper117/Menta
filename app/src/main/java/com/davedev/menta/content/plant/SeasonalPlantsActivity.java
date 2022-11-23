@@ -58,12 +58,12 @@ public class SeasonalPlantsActivity extends AppCompatActivity {
 
     public void init(){
         elementPlants = new ArrayList<>();
-        elementPlants.add(new ListElementPlant((R.drawable.sample), "Seasonal Name Plant",
-                "Seasonal Plant Description",
-                "Seasonal Plant Indications",
-                "0cm",
-                "0%",
-                "0°C"));
+        elementPlants.add(new ListElementPlant((R.drawable.nochebuena_min), "Noche Buena (Euphorbia pulcherrima)",
+                "La flor de nochebuena o flor de pascua es una especie nativa de México, la cual pertenece a la familia de las euforbiáceas como el ricino. Su nombre científico es Euphorbia pulcherrima y posee un enorme valor ornamental, siendo una de las plantas más cultivadas en todo el mundo.",
+                "Son plantas delicadas, solo hay que recordar su origen tropical. Lo primero, retira el plástico en el que viene envuelta, porque asfixia las hojas. En invierno, los cuidados de la poinsettia para que no se quede lacia son claves: necesitan luz natural, así que busca una estancia con una humedad ambiental alta y pon la maceta en un rinconcito junto a una ventana, donde no llegue la calefacción. Las altas temperaturas suelen marchitan el follaje de la poinsettia.",
+                "30 - 50cm",
+                "60%",
+                "16°C - 22°C"));
         elementPlants.add(new ListElementPlant((R.drawable.sample), "Seasonal Name Plant",
                 "Seasonal Plant Description",
                 "Seasonal Plant Indications",
