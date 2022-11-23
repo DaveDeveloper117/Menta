@@ -88,9 +88,9 @@ public class SeasonalPlantsActivity extends AppCompatActivity {
                 "0cm",
                 "0%",
                 "0°C"));
-        elementPlants.add(new ListElementPlant((R.drawable.sample), "Seasonal Name Plant",
-                "Seasonal Plant Description",
-                "Seasonal Plant Indications",
+        elementPlants.add(new ListElementPlant((R.drawable.sample), "Planta De Pino",
+                "Lorem ipsum jasjaj",
+                "Texto de cuidados",
                 "0cm",
                 "0%",
                 "0°C"));

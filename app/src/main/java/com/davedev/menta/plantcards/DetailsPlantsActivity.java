@@ -1,6 +1,5 @@
 package com.davedev.menta.plantcards;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +8,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.davedev.menta.R;
 import com.davedev.menta.content.plant.InteriorPlantsActivity;
