@@ -70,30 +70,30 @@ public class SeasonalPlantsActivity extends AppCompatActivity {
                 "80cm - 2m",
                 "60%",
                 "5°C - 12°C"));
-        elementPlants.add(new ListElementPlant((R.drawable.sample), "Seasonal Name Plant",
-                "Seasonal Plant Description",
-                "Seasonal Plant Indications",
-                "0cm",
-                "0%",
-                "0°C"));
-        elementPlants.add(new ListElementPlant((R.drawable.sample), "Seasonal Name Plant",
-                "Seasonal Plant Description",
-                "Seasonal Plant Indications",
-                "0cm",
-                "0%",
-                "0°C"));
-        elementPlants.add(new ListElementPlant((R.drawable.sample), "El verga larga",
-                "Seasonal Plant Description",
-                "Seasonal Plant Indications",
-                "0cm",
-                "0%",
-                "0°C"));
-        elementPlants.add(new ListElementPlant((R.drawable.sample), "Planta De Pino",
-                "Lorem ipsum jasjaj",
-                "Texto de cuidados",
-                "0cm",
-                "0%",
-                "0°C"));
+        elementPlants.add(new ListElementPlant((R.drawable.amarilis_min), "Amarilis (Amaryllis)",
+                "El Amarilis es una planta bulbosa elegante donde las haya, compuesta por un gran bulbo del que salen uno o dos tallos florales antes de que comiencen a aparecer las hojas.",
+                "Respecto al riego, lo ideal es que la tierra se mantenga siempre húmeda, pero evitando encharcamiento. Esta planta puede florecer año tras año, para ello, es recomendable mantener un periodo de reposo de aproximadamente 2 meses sin riego ni abono en un lugar fresco y oscuro.",
+                "20cm - 40cm",
+                "60%",
+                "13°C - 18°C"));
+        elementPlants.add(new ListElementPlant((R.drawable.ciclamen_min), "Ciclamen (Cyclamen)",
+                "Es una de las plantas por excelencia del frío porque precisamente con él es cómo logra florecer. Una compañía natural que podemos disfrutar si conocemos los cuidados del Ciclamen y, además, descubrimos cómo alargar un poco más su floración. Porque, y aunque es poco sabido, si le damos a la planta lo que necesita sus flores pueden acompañarnos incluso durante cuatro meses.",
+                "Aunque es poco sabido, el Ciclamen es una planta oriunda de la zona Mediterránea oriental; y son precisamente estos orígenes lo que marcan sus ciclos vitales. Acostumbrada a habitar en las áreas boscosas de estas regiones, la meteorología a la que está acostumbrada es la que marca de manera natural los cuidados del Ciclamen.",
+                "30cm - 60cm",
+                "40%",
+                "16°C"));
+        elementPlants.add(new ListElementPlant((R.drawable.espatifilo_min), "Espatifilo (Spathiphyllum)",
+                "Esta planta perenne de origen sudamericano aporta mucha paz y tranquilidad a la casa. Además, es una de las plantas de interior más utilizadas para purificar el aire. Sus brillantes hojas tienen una elegante forma lanceolada y, en condiciones de buena iluminación, produce flores blancas, grandes y duraderas.",
+                "Es una planta muy seductora para cualquier principiante porque es exquisita, se adapta a cualquier entorno y es fácil de cuidar.",
+                "12cm  60cm",
+                "35%",
+                "20°C - 22°C"));
+        elementPlants.add(new ListElementPlant((R.drawable.prímula_min), "Prímula (Primula)",
+                "Las prímulas, también conocidas como primaveras o primaveras de jardín, es un género de plantas de la familia de las primuláceas. Es una planta perenne de crecimiento bajo con alrededor de 500 especies. Muchas de las especies de este género se dan espontáneamente en todo el hemisferio norte.",
+                "Las prímulas se deben colocar en una zona fresca y luminosa, evitando la luz directa del sol. No soporta las altas temperaturas y, aunque tolera el frío, es muy susceptible a las heladas. Se multiplica por semillas y para su plantación se recomienda un sustrato bien aireado y rico en materia orgánica.",
+                "20cm - 40cm",
+                "40%",
+                "14°C - 18°C"));
 
 
         listAdapterPlant = new ListAdapterPlant(elementPlants, this, this::moveToDescription);
