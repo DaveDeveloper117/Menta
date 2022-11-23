@@ -64,12 +64,12 @@ public class SeasonalPlantsActivity extends AppCompatActivity {
                 "30 - 50cm",
                 "60%",
                 "16°C - 22°C"));
-        elementPlants.add(new ListElementPlant((R.drawable.sample), "Seasonal Name Plant",
-                "Seasonal Plant Description",
-                "Seasonal Plant Indications",
-                "0cm",
-                "0%",
-                "0°C"));
+        elementPlants.add(new ListElementPlant((R.drawable.camelia_min), "Camelia (Camellia)",
+                "Las camelias se cultivaron en los jardines de China y Japón durante siglos antes de que se vieran en Europa.",
+                "En cuanto a sus cuidados, debe estar ubicada en semi-sombra, no tolerará sol directo, pero si el frío intenso. No es conveniente cambiar de ubicación a nuestra Camelia, ya que sufre bastante con las variaciones (temperatura, riego, etc.). Le agrada mucho la iluminación.",
+                "80cm - 2m",
+                "60%",
+                "5°C - 12°C"));
         elementPlants.add(new ListElementPlant((R.drawable.sample), "Seasonal Name Plant",
                 "Seasonal Plant Description",
                 "Seasonal Plant Indications",
