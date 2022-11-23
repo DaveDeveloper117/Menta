@@ -119,36 +119,36 @@ public class SeasonalPlantsActivity extends AppCompatActivity {
                 "60%",
                 "-23°C"));
 
-        elementPlants.add(new ListElementPlant((R.drawable.hortensiadeinvierno_min), "Hortensia de invierno ()",
-                "Las prímulas, también conocidas como primaveras o primaveras de jardín, es un género de plantas de la familia de las primuláceas. Es una planta perenne de crecimiento bajo con alrededor de 500 especies. Muchas de las especies de este género se dan espontáneamente en todo el hemisferio norte.",
-                "Las prímulas se deben colocar en una zona fresca y luminosa, evitando la luz directa del sol. No soporta las altas temperaturas y, aunque tolera el frío, es muy susceptible a las heladas. Se multiplica por semillas y para su plantación se recomienda un sustrato bien aireado y rico en materia orgánica.",
-                "20cm - 40cm",
-                "40%",
-                "14°C - 18°C"));
-        elementPlants.add(new ListElementPlant((R.drawable.prímula_min), "Prímula (Primula)",
-                "Las prímulas, también conocidas como primaveras o primaveras de jardín, es un género de plantas de la familia de las primuláceas. Es una planta perenne de crecimiento bajo con alrededor de 500 especies. Muchas de las especies de este género se dan espontáneamente en todo el hemisferio norte.",
-                "Las prímulas se deben colocar en una zona fresca y luminosa, evitando la luz directa del sol. No soporta las altas temperaturas y, aunque tolera el frío, es muy susceptible a las heladas. Se multiplica por semillas y para su plantación se recomienda un sustrato bien aireado y rico en materia orgánica.",
-                "20cm - 40cm",
-                "40%",
-                "14°C - 18°C"));
-        elementPlants.add(new ListElementPlant((R.drawable.prímula_min), "Prímula (Primula)",
-                "Las prímulas, también conocidas como primaveras o primaveras de jardín, es un género de plantas de la familia de las primuláceas. Es una planta perenne de crecimiento bajo con alrededor de 500 especies. Muchas de las especies de este género se dan espontáneamente en todo el hemisferio norte.",
-                "Las prímulas se deben colocar en una zona fresca y luminosa, evitando la luz directa del sol. No soporta las altas temperaturas y, aunque tolera el frío, es muy susceptible a las heladas. Se multiplica por semillas y para su plantación se recomienda un sustrato bien aireado y rico en materia orgánica.",
-                "20cm - 40cm",
-                "40%",
-                "14°C - 18°C"));
-        elementPlants.add(new ListElementPlant((R.drawable.prímula_min), "Prímula (Primula)",
-                "Las prímulas, también conocidas como primaveras o primaveras de jardín, es un género de plantas de la familia de las primuláceas. Es una planta perenne de crecimiento bajo con alrededor de 500 especies. Muchas de las especies de este género se dan espontáneamente en todo el hemisferio norte.",
-                "Las prímulas se deben colocar en una zona fresca y luminosa, evitando la luz directa del sol. No soporta las altas temperaturas y, aunque tolera el frío, es muy susceptible a las heladas. Se multiplica por semillas y para su plantación se recomienda un sustrato bien aireado y rico en materia orgánica.",
-                "20cm - 40cm",
-                "40%",
-                "14°C - 18°C"));
-        elementPlants.add(new ListElementPlant((R.drawable.prímula_min), "Prímula (Primula)",
-                "Las prímulas, también conocidas como primaveras o primaveras de jardín, es un género de plantas de la familia de las primuláceas. Es una planta perenne de crecimiento bajo con alrededor de 500 especies. Muchas de las especies de este género se dan espontáneamente en todo el hemisferio norte.",
-                "Las prímulas se deben colocar en una zona fresca y luminosa, evitando la luz directa del sol. No soporta las altas temperaturas y, aunque tolera el frío, es muy susceptible a las heladas. Se multiplica por semillas y para su plantación se recomienda un sustrato bien aireado y rico en materia orgánica.",
-                "20cm - 40cm",
-                "40%",
-                "14°C - 18°C"));
+        elementPlants.add(new ListElementPlant((R.drawable.hortensiadeinvierno_min), "Hortensia de invierno (Bergenia crassifolia)",
+                "Se trata de una planta de exterior ornamental muy versátil y de muy fácil cultivo. Precisamente su excepcional facilidad de cuidados, junto con su rusticidad, hace que esta planta sea imprescindible en el jardín.",
+                "La hortensia de invierno es poco exigente en cuanto a sus cuidados. Le gustan los suelos siempre húmedos y ricos en materia orgánica. Se sitúa habitualmente en semisombra, aunque si el suelo es muy húmedo tolera el sol directo. Los riegos deben ser frecuentes ya que no tolera la sequía.",
+                "40cm",
+                "90%",
+                "-20°C"));
+        elementPlants.add(new ListElementPlant((R.drawable.campanillasdeinvierno_min), "Campanillas de invierno (galanthus)",
+                "Se caracterizan por unas florecillas blancas colgantes que florecen entre el fin la del invierno y el comienzo de la primavera.",
+                "Si se quiere tener en el jardín entonces se necesitará que el suelo sea húmedo pero que esté bien drenado. Por supuesto, no hay que exponerla al sol directamente sino situarla en zonas de semisombra.",
+                "15cm",
+                "80%",
+                "-8°C - 9°C"));
+        elementPlants.add(new ListElementPlant((R.drawable.wisteria_min), "Wisteria o glicina (Wisteria sinensis)",
+                "Son plantas trepadoras muy vigorosas y longevas que con el paso de los años llegan a desarrollar una wisteria. Debemos tener en cuenta su gran vigor y volumen final para evitar problemas de escala en un futuro.",
+                "El riego debe ser regular, más frecuente en los primeros años de la planta y abonaremos todos los años poniendo especial atención durante la época de floración.",
+                "10m - 15m",
+                "70%",
+                "18°C - 28°C"));
+        elementPlants.add(new ListElementPlant((R.drawable.calendula_min), "Caléndula (Calendula officinalis)",
+                "Es una planta que tradicionalmente siempre ha tenido un rincón en el jardín debido a su rusticidad e intensa floración, principalmente a finales de invierno. Tiene propiedades curativas sobre todo relacionadas con problemas de la piel, quemaduras, hongos, úlceras y picaduras.",
+                "Hay que regarlo de forma regular pero con moderación ya que no deben estar en un suelo demasiado húmedo. Utilizaremos un abono para plantas con flores y abonaremos la planta cada 15 días durante el verano.",
+                "20cm - 55cm",
+                "2.5%",
+                "-3°C - 25°C"));
+        elementPlants.add(new ListElementPlant((R.drawable.ranuculo_min), "Ranúculos (Ranunculus asiaticus)",
+                "Florecen a finales de invierno y principios de primavera después de ser sembrados en otoño y que estarán en flor hasta verano. Los ranúnculos pueden tener flores blancas, amarillas, naranjas, rosas, rojas y moradas gracias a la hibridación y selección de bulbos.",
+                "Requieren una cantidad de agua normal para su crecimiento que será más intenso durante la primera semana, aunque sin encharcar la tierra.",
+                "20cm",
+                "35%",
+                "1°C - 18°C"));
 
 
         listAdapterPlant = new ListAdapterPlant(elementPlants, this, this::moveToDescription);
