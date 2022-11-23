@@ -88,12 +88,36 @@ public class SeasonalPlantsActivity extends AppCompatActivity {
                 "12cm  60cm",
                 "35%",
                 "20°C - 22°C"));
-        elementPlants.add(new ListElementPlant((R.drawable.prímula_min), "Prímula (Primula)",
-                "Las prímulas, también conocidas como primaveras o primaveras de jardín, es un género de plantas de la familia de las primuláceas. Es una planta perenne de crecimiento bajo con alrededor de 500 especies. Muchas de las especies de este género se dan espontáneamente en todo el hemisferio norte.",
+        elementPlants.add(new ListElementPlant((R.drawable.primula_min), "Prímula (Primula)",
+                "Las prímulas, también conocidas cmula_omo primaveras o primaveras de jardín, es un género de plantas de la familia de las primuláceas. Es una planta perenne de crecimiento bajo con alrededor de 500 especies. Muchas de las especies de este género se dan espontáneamente en todo el hemisferio norte.",
                 "Las prímulas se deben colocar en una zona fresca y luminosa, evitando la luz directa del sol. No soporta las altas temperaturas y, aunque tolera el frío, es muy susceptible a las heladas. Se multiplica por semillas y para su plantación se recomienda un sustrato bien aireado y rico en materia orgánica.",
                 "20cm - 40cm",
                 "40%",
                 "14°C - 18°C"));
+        elementPlants.add(new ListElementPlant((R.drawable.begonia_min), "Begonia (Begonia)",
+                "El género Begonia comprende alrededor de 1500 especies, de las que alrededor de 150, además de casi 10 000 variedades e híbridos, se comercializan para su uso en jardinería. Son oriundas de las regiones tropicales y subtropicales de América, África y Asia.",
+                "Las prímulas se deben colocar en una zona fresca y luminosa, evitando la luz directa del sol. No soporta las altas temperaturas y, aunque tolera el frío, es muy susceptible a las heladas. Se multiplica por semillas y para su plantación se recomienda un sustrato bien aireado y rico en materia orgánica.",
+                "20cm - 40cm",
+                "40%",
+                "14°C - 18°C"));
+        elementPlants.add(new ListElementPlant((R.drawable.narciso_min), "Narciso (Narcissus)",
+                "Narcissus es un género de la familia Amaryllidaceae originario de la cuenca mediterránea y Europa. Comprende numerosas especies bulbosas, la mayoría con floración primaveral, aunque hay algunas especies que florecen en el otoño. En español, se le conoce como flor pato o narciso.",
+                "Ubicación: semisombra. Sustrato: ligero para que drene bien y algo enriquecido con materia o abono orgánico. Riego: moderado pero cada poco tiempo para mantener un buen nivel de humedad, sin llegar a encharcar. Poda: solo hay que eliminar las flores y hojas secas.",
+                "1cm - 22 cm",
+                "30%",
+                "16°C - 20°C"));
+        elementPlants.add(new ListElementPlant((R.drawable.crisantemo_min), "Crisantemo (Chrysanthemum)",
+                "El crisantemo es una de las flores con mayor diversidad de formas y colores. Pertenece a la familia de las compuestas y las hojas pueden ser lobuladas o dentadas, lingulosas o rugosas y están recubiertas por un polvillo blanquecino que le da un aspecto grisáceo. Casi siempre son muy aromáticas. Sus flores ofrecen una amplísima variedad de formas que van desde las más simples, tipo margarita, a las llamadas anémonas, tubulares, pompones, etc.",
+                "Los crisantemos necesitan mucha luz, pero teniendo cuidado de que la exposición solar no sea directa, ya que podrían quemarse. Las condiciones de temperatura ambiente son normales; por eso, uno de los consejos para los crisantemos es que se ubiquen en una habitación bastante fresca y muy bien ventilada, ya que se marchitan enseguida si el ambiente es demasiado caluroso.",
+                "1cm - 20cm",
+                "60%",
+                "13°C - 18°C"));
+        elementPlants.add(new ListElementPlant((R.drawable.membrillero_japones_min), "Membrillero japonés (Chaenomeles japonica)",
+                "Chaenomeles japonica es una especie de plantas del género Chaenomeles, familia de las rosáceas. Es nativa del este asiático.",
+                "Regar moderadamente todo el año (2 riegos por semana) aumentando un poco el aporte de agua en verano si hace mucho calor. La poda es muy importante y se lleva a cabo tras la floración cortando las ramas sobre la segunda yema a partir de la rama principal.",
+                "20cm - 3m",
+                "60%",
+                "-23°C"));
 
         elementPlants.add(new ListElementPlant((R.drawable.hortensiadeinvierno_min), "Hortensia de invierno ()",
                 "Las prímulas, también conocidas como primaveras o primaveras de jardín, es un género de plantas de la familia de las primuláceas. Es una planta perenne de crecimiento bajo con alrededor de 500 especies. Muchas de las especies de este género se dan espontáneamente en todo el hemisferio norte.",
