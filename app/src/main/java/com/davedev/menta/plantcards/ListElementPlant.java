@@ -6,16 +6,16 @@ public class ListElementPlant implements Serializable {
     public int imagePlant;
     public String namePlant;
     public String descriptionPlant;
-    public String supportPlant;
+    public String caresPlant;
     public String heightPlant;
     public String humidityPlant;
     public String temperaturePlant;
 
-    public ListElementPlant(int imagePlant, String namePlant, String descriptionPlant, String supportPlant, String heightPlant, String humidityPlant, String temperaturePlant) {
+    public ListElementPlant(int imagePlant, String namePlant, String descriptionPlant, String caresPlant, String heightPlant, String humidityPlant, String temperaturePlant) {
         this.imagePlant = imagePlant;
         this.namePlant = namePlant;
         this.descriptionPlant = descriptionPlant;
-        this.supportPlant = supportPlant;
+        this.caresPlant = caresPlant;
         this.heightPlant = heightPlant;
         this.humidityPlant = humidityPlant;
         this.temperaturePlant = temperaturePlant;
@@ -31,8 +31,8 @@ public class ListElementPlant implements Serializable {
 
     public void setDescriptionPlant(String descriptionPlant) { this.descriptionPlant = descriptionPlant; }
 
-    public void setSupportPlant(String supportPlant) {
-        this.supportPlant = supportPlant;
+    public void setCaresPlant(String caresPlant) {
+        this.caresPlant = caresPlant;
     }
 
     public void setHeightPlant(String heightPlant) {
@@ -55,8 +55,8 @@ public class ListElementPlant implements Serializable {
         return descriptionPlant;
     }
 
-    public String getSupportPlant() {
-        return supportPlant;
+    public String getCaresPlant() {
+        return caresPlant;
     }
 
     public String getHeightPlant() {
