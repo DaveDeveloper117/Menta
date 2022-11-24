@@ -74,7 +74,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
                     app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Card.Media"
-                    app:srcCompat="@drawable/blog_marco" />
+                    app:srcCompat="@drawable/img_blog_david" />
 
                 <TextView
                     android:layout_width="wrap_content"

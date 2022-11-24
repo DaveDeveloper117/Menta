@@ -6,4 +6,231 @@
     android:layout_height="match_parent"
     tools:context=".content.blog.BlogSeasonalPlantsActivity">
 
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabBack"
+        style="@style/Widget.App.FloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center"
+        android:layout_margin="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_round_arrow_back_24"
+        android:contentDescription="@string/fab_content_desc" />
+
+    <ScrollView
+        android:id="@+id/scrollBlog"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:orientation="vertical"
+        android:scrollbarSize="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/descImagePlant"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/bg_blog_season" />
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Qué plantas quedan mejor cultivar en cada estación del año?"
+                android:padding="8dp"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline4"/>
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:id="@+id/coordinatorLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Main content -->
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="40dp"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_margin="8dp"
+                    android:layout_height="40dp"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Card.Media"
+                    app:srcCompat="@drawable/img_blog_valam" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginStart="64dp"
+                    android:text="Artículo por Eduardo Valam Matias Bautista"
+                    android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Caption" />
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aquí se muestran algunas de las semillas y plantas más resistentes y durables según la temporada."
+                android:padding="8dp"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRIMAVERA (marzo-mayo)"
+                android:padding="8dp"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Semillas:\nAlbahaca\nCilantro\nEspinaca\nLechuga\nRábano\n\nPlanta:\nTomate\nPimiento\nFresa\nBerenjena"
+                android:padding="8dp"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Card.Media"
+                app:srcCompat="@drawable/img_blog_season_0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Cabe mencionar que, para que se dé una correcta germinación o la planta siga creciendo, es necesario preparar bien el suelo. En caso de iniciar con semillas, debemos limpiar el suelo de mala hierba, levantar la tierra y abonar a cierta profundidad para que impregne bien y el suelo tenga mejor filtración, mayor absorción de humedad y facilite el paso de los nutrientes."
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="VERANO (junio-agosto)"
+                android:padding="8dp"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Semillas:\n\nRabanito\nMaíz\nPerejil\nPlanta:\nAlbahaca\nCilantro\nLechuga\nEspinaca\nTomate\nPimiento\nBerenjena"
+                android:padding="8dp"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Card.Media"
+                app:srcCompat="@drawable/img_blog_season_1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Aquí es cuando se alcanzan las temperaturas más altas, por tanto, es fundamental proteger el huerto del calor. Para evitar la rápida evaporación del agua, se recomienda cubrir el suelo o las macetas con piedras, restos secos de césped o corteza de pino. A su vez, hay que protegerlo de los rayos directos del sol, por medio de la colocación de un toldo o cercas altas que bloqueen la luz. Si usamos macetas solo es cuestión de removerlas de lugar.\nTambién debemos aumentar el riego, especialmente si la especie es de humedad."
+                android:padding="8dp"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OTOÑO (septiembre-noviembre)"
+                android:padding="8dp"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Semilla:\nChícharo\nHaba\nLechuga\nAcelga\nPerejil\nEspinaca\nZanahoria\nAjo\nApio\nBrócoli\nColiflor"
+                android:padding="8dp"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Las orquídeas son un claro ejemplo de ello, también el coleo o cretona. Para éstas puedes optar por hidratarlas desde abajo; sumergiendo parcialmente las macetas, así absorberáAquí empieza a disminuir la temperatura, por lo que también debemos proteger las semillas o plantas, pero con una capa más tenue de paja, piedras o pasto. Además, debemos cuidarlas de las fuertes lluvias, por lo que las telas antiheladas son una gran alternativa. Por otro lado, también debemos abonar antes de sembrar y fertilizar antes de que acabe la temporada."
+                android:padding="8dp"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INVIERNO (diciembre – febrero)"
+                android:padding="8dp"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plantas o semillas\nLechuga\nEspinaca\nChícharo\nPerejil\nAcelga"
+                android:padding="8dp"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Estas son las plantas que más resisten los climas fríos, pero si la temperatura baja mucho y no pueden mantenerse vivas, entonces hay que probar colocando semillas. Otra alternativa es creando un espacio tipo invernadero, lo cual podemos conseguir protegiendo las plantas con recipientes de vidrio o agregando una capa de plástico cuando esté el frío más intenso.\nAhora bien, las plantas que funcionan bien todo el año son la acelga, la lechuga y la zanahoria, por lo que tendremos alimentos saludables en cualquier momento."
+                android:padding="8dp"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Card.Media"
+                app:srcCompat="@drawable/img_blog_season_2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ahora que sabemos cuáles son las mejores plantas para nuestro huerto considerando sus diversas características, sin duda será más fácil hacer que crezca lleno de vida y se mantenga así durante todo el año."
+                android:padding="8dp"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
