@@ -48,8 +48,8 @@ Después de instalar Menta, puedes probar las diferentes funciones de la aplicac
 A continuación se muestran algunas imágenes de demostración de la aplicación Menta:
 
 
-<img src="assets/screen_1-min.png" alt="login" width="300"><img src="assets/screen_2-min.png" alt="dashboard" width="300">
-<img src="assets/screen_3-min.png" alt="search" width="300"><img src="assets/screen_4-min.png" alt="details" width="300">
+<img src="assets/screen_1-min.png" alt="login" width="300"> <img src="assets/screen_2-min.png" alt="dashboard" width="300">
+<img src="assets/screen_3-min.png" alt="search" width="300"> <img src="assets/screen_4-min.png" alt="details" width="300">
 
 ## Licencia
 
