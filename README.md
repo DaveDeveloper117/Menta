@@ -29,8 +29,6 @@ Para instalar la aplicación Menta, sigue estos pasos:
 
 1.  Clona el repositorio en tu computadora:
 
-
-
 `git clone https://github.com/tu-usuario/Menta.git` 
 
 2.  Abre el proyecto en Android Studio
@@ -49,21 +47,10 @@ Después de instalar Menta, puedes probar las diferentes funciones de la aplicac
 
 A continuación se muestran algunas imágenes de demostración de la aplicación Menta:
 
-![Imagen 1](https://chat.openai.com/ruta/a/imagen1.png)
+<img src="assets/screen_1-min.png" alt="login" width="300"> <img src="assets/screen_2-min.png" alt="dashboard" width="300">
 
-![Imagen 2](https://chat.openai.com/ruta/a/imagen2.png)
-
-![Imagen 3](https://chat.openai.com/ruta/a/imagen3.png)
-
-## Contribución
-
-Menta es un proyecto de código abierto y se aceptan contribuciones. Si deseas contribuir al proyecto, sigue estos pasos:
-
-1.  Haz un fork del repositorio
-2.  Crea una rama para tu contribución
-3.  Realiza los cambios en tu rama
-4.  Envía un pull request para revisión
+<img src="assets/screen_3-min.png" alt="search" width="300"> <img src="assets/screen_4-min.png" alt="details" width="300">
 
 ## Licencia
 
-Menta se distribuye bajo la Licencia MIT. Para más información, consulta el archivo LICENSE en este repositorio.
+Menta se distribuye bajo la Licencia MIT. Para más información, consulta el archivo [LICENSE](https://github.com/DaveDeveloper117/Menta/blob/master/LICENSE) en este repositorio.
