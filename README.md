@@ -29,7 +29,7 @@ Para instalar la aplicación Menta, sigue estos pasos:
 
 1.  Clona el repositorio en tu computadora:
 
-bashCopy code
+
 
 `git clone https://github.com/tu-usuario/Menta.git` 
 
