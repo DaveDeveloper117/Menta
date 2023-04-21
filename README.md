@@ -47,6 +47,12 @@ Después de instalar Menta, puedes probar las diferentes funciones de la aplicac
 
 A continuación se muestran algunas imágenes de demostración de la aplicación Menta:
 
+
+<img src="(assets/screen_1-min.png)" alt="texto_alternativo" width="500">
+<img src="(assets/screen_2-min.png)" alt="texto_alternativo" width="500">
+<img src="(assets/screen_3-min.png)" alt="texto_alternativo" width="500">
+<img src="(assets/screen_4-min.png)" alt="texto_alternativo" width="500">
+
 ![Imagen 1](assets/screen_1-min.png)
 
 ![Imagen 2](assets/screen_2-min.png)
