@@ -49,11 +49,14 @@ Después de instalar Menta, puedes probar las diferentes funciones de la aplicac
 
 A continuación se muestran algunas imágenes de demostración de la aplicación Menta:
 
-![Imagen 1](https://chat.openai.com/ruta/a/imagen1.png)
+![Imagen 1](assets/screen_1-min.jpg)
 
-![Imagen 2](https://chat.openai.com/ruta/a/imagen2.png)
+![Imagen 2](assets/screen_2-min.jpg)
 
-![Imagen 3](https://chat.openai.com/ruta/a/imagen3.png)
+![Imagen 3](assets/screen_3-min.jpg)
+
+![Imagen 4](assets/screen_4-min.jpg)
+
 
 ## Contribución
 
