@@ -1,5 +1,16 @@
 package com.davedev.menta;
 
+/*
+ * Nombre del Proyecto: Menta
+ * Desarrollador: David Butrón
+ * Perfil de Github: https://github.com/DaveDeveloper117/
+ * Diseñador UI: Valam Matías
+ * Perfil de Github: https://github.com/OmniSk8/
+ * Licencia: https://github.com/DaveDeveloper117/Menta/blob/master/LICENSE
+ * URL del Repositorio: https://github.com/DaveDeveloper117/Menta.git
+*/
+
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
