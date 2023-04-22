@@ -1,5 +1,8 @@
 
+<img src="https://user-images.githubusercontent.com/64762472/233758839-249a4c43-1e92-4132-8709-0938b0a76cc5.png" alt="logo" width="100"> 
+
 # Menta
+
 
 Menta es una aplicación móvil que contiene una plantilla de UI/UX para una app de plantas. Esta plantilla se desarrolló en Android Studio con la versión del SDK 33 y se utilizó la librería Material You para el diseño de la aplicación.
 
