@@ -38,10 +38,6 @@ Para instalar la aplicación Menta, sigue estos pasos:
 
 Puedes ver una demostración en vivo de la aplicación Menta en el siguiente enlace: [MentaLiveDemo](https://appetize.io/app/voicgta7jbpqc5w5rpbczdbz6a)
 
-<iframe
-  src="https://appetize.io/embed/voicgta7jbpqc5w5rpbczdbz6a?device=pixel4"
-  width="fit-content" height="630" frameborder="0" scrolling="no"></iframe>
-
 Ten en cuenta que esta demostración es solo una representación de la aplicación y no incluye todas las funciones disponibles en la versión completa de Menta. Además, la velocidad y el rendimiento pueden verse afectados por factores como la calidad de la conexión a Internet y el dispositivo utilizado.
 
 Si deseas probar todas las funciones de la aplicación, te recomendamos que sigas los pasos de instalación descritos en la sección anterior y ejecutes Menta en tu propio dispositivo o emulador.
