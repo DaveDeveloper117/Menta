@@ -64,11 +64,17 @@ A continuación se muestran algunas imágenes de demostración de la aplicación
 ![Menta UI Color](https://user-images.githubusercontent.com/64762472/233757411-96629db1-53fc-4e6f-a118-358f7ed709f0.png)
 
 - Hex
+
 -- black-olive: <code>#404532ff</code>
+
 -- reseda-green: <code>#6b705cff</code>
+
 -- ash-gray: <code>#999e89ff</code>
+
 -- raw-umber: <code>#996b52ff</code>
+
 -- buff: <code>#cb997eff</code>
+
 -- apricot: <code>#ffcaadff</code>
 
 
