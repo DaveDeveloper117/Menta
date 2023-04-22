@@ -59,6 +59,19 @@ A continuación se muestran algunas imágenes de demostración de la aplicación
 
 <img src="assets/screen_3-min.png" alt="search" width="300"> <img src="assets/screen_4-min.png" alt="details" width="300">
 
+## Paleta de Colores UI
+
+![Menta UI Color](https://user-images.githubusercontent.com/64762472/233757411-96629db1-53fc-4e6f-a118-358f7ed709f0.png)
+
+- Hex
+-- black-olive: <code>#404532ff</code>
+-- reseda-green: <code>#6b705cff</code>
+-- ash-gray: <code>#999e89ff</code>
+-- raw-umber: <code>#996b52ff</code>
+-- buff: <code>#cb997eff</code>
+-- apricot: <code>#ffcaadff</code>
+
+
 ## Licencia
 
 Menta se distribuye bajo la Licencia MIT. Para más información, consulta el archivo [LICENSE](https://github.com/DaveDeveloper117/Menta/blob/master/LICENSE) en este repositorio.
