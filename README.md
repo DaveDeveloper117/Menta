@@ -32,7 +32,7 @@ Para instalar la aplicación Menta, sigue estos pasos:
 
 1.  Clona el repositorio en tu computadora:
 
-`git clone https://github.com/tu-usuario/Menta.git` 
+<script>`git clone https://github.com/DaveDeveloper117/Menta.git`</script> 
 
 2.  Abre el proyecto en Android Studio
 3.  Haz clic en "Run" para compilar y ejecutar la aplicación en tu dispositivo o emulador
