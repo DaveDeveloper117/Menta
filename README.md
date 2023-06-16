@@ -70,22 +70,22 @@ A continuación se muestran algunas imágenes de demostración de la aplicación
 
 Hexadecimal
 
--- black-olive: <code>#404532ff</code>
+- black-olive: `#404532ff`
 
--- reseda-green: <code>#6b705cff</code>
+- reseda-green: `#6b705cff`
 
--- ash-gray: <code>#999e89ff</code>
+- ash-gray: `#999e89ff`
 
--- raw-umber: <code>#996b52ff</code>
+- raw-umber: `#996b52ff`
 
--- buff: <code>#cb997eff</code>
+- buff: `#cb997eff`
 
--- apricot: <code>#ffcaadff</code>
+- apricot: `#ffcaadff`
 
 ## Contribuidores ♥️
 
-- Eduardo Valam Matías Bautista ([@OmniSk8](https://github.com/OmniSk8))
-- Marco Antonio Malagon Perdomo ([@SpartanTerra69](https://github.com/SpartanTerra69))
+- Eduardo Valam Matías Bautista - Diseñador ([@OmniSk8](https://github.com/OmniSk8))
+- Marco Antonio Malagon Perdomo - Diseñador ([@SpartanTerra69](https://github.com/SpartanTerra69))
 
 
 ## Licencia 🔑
