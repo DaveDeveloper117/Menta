@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+Nombre del Proyecto: Menta
+Desarrollador: David Butrón
+Perfil de Github: https://github.com/DaveDeveloper117/
+Diseñadore UI/UX: Valam Matías https://github.com/OmniSk8
+Diseñadore UI/UX: Marco Malagon https://github.com/SpartanTerra69
+Perfil de Github: https://github.com/OmniSk8/
+Licencia: https://github.com/DaveDeveloper117/Menta/blob/master/LICENSE
+URL del Repositorio: https://github.com/DaveDeveloper117/Menta.git
+-->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
