@@ -4,11 +4,11 @@ package com.davedev.menta;
  * Nombre del Proyecto: Menta
  * Desarrollador: David Butrón
  * Perfil de Github: https://github.com/DaveDeveloper117/
- * Diseñador UI: Valam Matías
- * Perfil de Github: https://github.com/OmniSk8/
+ * Diseñador UI/UX: Valam Matías https://github.com/OmniSk8
+ * Diseñador UI/UX: Marco Malagon https://github.com/SpartanTerra69
  * Licencia: https://github.com/DaveDeveloper117/Menta/blob/master/LICENSE
  * URL del Repositorio: https://github.com/DaveDeveloper117/Menta.git
-*/
+ */
 
 
 import android.content.Intent;
@@ -34,15 +34,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //Logo Image
         logoImageView = findViewById(R.id.logoImageView);
-        //bgImageView = findViewById(R.id.bgImageView);
         //Text Logo
         titleTextView = findViewById(R.id.titleTextView);
         //Animation
         fadeIn = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fade_in);
-        //fadeOut = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fade_out);
-
         //Set Animations
-        //bgImageView.setAnimation(fadeOut);
         logoImageView.setAnimation(fadeIn);
         titleTextView.setAnimation(fadeIn);
 

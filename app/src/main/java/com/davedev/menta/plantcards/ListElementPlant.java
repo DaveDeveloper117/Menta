@@ -1,5 +1,15 @@
 package com.davedev.menta.plantcards;
 
+/*
+ * Nombre del Proyecto: Menta
+ * Desarrollador: David Butrón
+ * Perfil de Github: https://github.com/DaveDeveloper117/
+ * Diseñador UI/UX: Valam Matías https://github.com/OmniSk8
+ * Diseñador UI/UX: Marco Malagon https://github.com/SpartanTerra69
+ * Licencia: https://github.com/DaveDeveloper117/Menta/blob/master/LICENSE
+ * URL del Repositorio: https://github.com/DaveDeveloper117/Menta.git
+ */
+
 import java.io.Serializable;
 
 public class ListElementPlant implements Serializable {

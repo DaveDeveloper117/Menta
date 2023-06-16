@@ -1,7 +1,17 @@
 package com.davedev.menta.login;
 
+/*
+ * Nombre del Proyecto: Menta
+ * Desarrollador: David Butrón
+ * Perfil de Github: https://github.com/DaveDeveloper117/
+ * Diseñadore UI/UX: Valam Matías https://github.com/OmniSk8
+ * Diseñadore UI/UX: Marco Malagon https://github.com/SpartanTerra69
+ * Perfil de Github: https://github.com/OmniSk8/
+ * Licencia: https://github.com/DaveDeveloper117/Menta/blob/master/LICENSE
+ * URL del Repositorio: https://github.com/DaveDeveloper117/Menta.git
+ */
+
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
